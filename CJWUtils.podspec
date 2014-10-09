@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "Classes", "CJWUtils/utils/*.{h,m}"
-  s.source_files  = "Classes", "CJWUtils/utils/*"
+  s.source_files  = "Classes", "CJWUtils/utils/**/*"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

@@ -14,6 +14,7 @@
 		B6BB712919E659DE0001088F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6BB712819E659DE0001088F /* Images.xcassets */; };
 		B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BB712A19E659DE0001088F /* LaunchScreen.xib */; };
 		B6BB713819E659DE0001088F /* CJWUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB713719E659DE0001088F /* CJWUtilsTests.m */; };
+		B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B6BB713119E659DE0001088F /* CJWUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CJWUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB713619E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB713719E659DE0001088F /* CJWUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJWUtilsTests.m; sourceTree = "<group>"; };
+		B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkActivityIndicator.h; sourceTree = "<group>"; };
+		B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkActivityIndicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		B6BB711A19E659DE0001088F /* CJWUtils */ = {
 			isa = PBXGroup;
 			children = (
+				B6BB714119E65E070001088F /* utils */,
 				B6BB711F19E659DE0001088F /* AppDelegate.h */,
 				B6BB712019E659DE0001088F /* AppDelegate.m */,
 				B6BB712219E659DE0001088F /* ViewController.h */,
@@ -117,6 +121,15 @@
 				B6BB713619E659DE0001088F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6BB714119E65E070001088F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
+				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
+				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +428,7 @@
 				B6BB713D19E659DE0001088F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6BB713E19E659DE0001088F /* Build configuration list for PBXNativeTarget "CJWUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +437,7 @@
 				B6BB714019E659DE0001088F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

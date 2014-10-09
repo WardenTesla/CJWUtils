@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
 
   #s.source       = { :git => "https://github.com/frankcjwen/CJWUtils.git", :tag => "0.0.1" }
   s.source       = { :git => "https://github.com/frankcjwen/CJWUtils.git" }
-
+  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -92,6 +92,10 @@ Pod::Spec.new do |s|
   #s.source_files  = "Classes", "CJWUtils/utils/*.{h,m}"
   s.source_files  = "Classes", "CJWUtils/utils/**/*"
   s.exclude_files = "Classes/Exclude"
+
+  s.subspec 'Refresh' do |ss|
+    ss.source_files = 'CJWUtils/utils/MJRefresh/*'
+  end
 
   # s.public_header_files = "Classes/**/*.h"
 

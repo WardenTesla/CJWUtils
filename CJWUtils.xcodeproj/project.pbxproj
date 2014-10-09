@@ -63,6 +63,7 @@
 		B6BB715219E66F8E0001088F /* CJWProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressHUD.m; sourceTree = "<group>"; };
 		B6BB715319E66F8E0001088F /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
 		B6BB715419E66F8E0001088F /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
+		B6BB715C19E670240001088F /* CJWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +165,7 @@
 				B6BB715419E66F8E0001088F /* NSString+Validate.m */,
 				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
+				B6BB715C19E670240001088F /* CJWUtils.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8535FD3BFB8249AA95D8689E /* libPods-CJWUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
 		B6BB712119E659DE0001088F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712019E659DE0001088F /* AppDelegate.m */; };
 		B6BB712419E659DE0001088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712319E659DE0001088F /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BB712A19E659DE0001088F /* LaunchScreen.xib */; };
 		B6BB713819E659DE0001088F /* CJWUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB713719E659DE0001088F /* CJWUtilsTests.m */; };
 		B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */; };
+		B6BB714819E669030001088F /* CJWCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714719E669030001088F /* CJWCacheUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4527588CDE644CD4A94FA37F /* Pods-CJWUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJWUtils.xcconfig"; path = "Pods/Pods-CJWUtils.xcconfig"; sourceTree = "<group>"; };
 		B6BB711819E659DE0001088F /* CJWUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJWUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB711C19E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB711D19E659DE0001088F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +46,9 @@
 		B6BB713719E659DE0001088F /* CJWUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJWUtilsTests.m; sourceTree = "<group>"; };
 		B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkActivityIndicator.h; sourceTree = "<group>"; };
 		B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkActivityIndicator.m; sourceTree = "<group>"; };
+		B6BB714619E669030001088F /* CJWCacheUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCacheUtils.h; sourceTree = "<group>"; };
+		B6BB714719E669030001088F /* CJWCacheUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCacheUtils.m; sourceTree = "<group>"; };
+		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8535FD3BFB8249AA95D8689E /* libPods-CJWUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +76,8 @@
 				B6BB711A19E659DE0001088F /* CJWUtils */,
 				B6BB713419E659DE0001088F /* CJWUtilsTests */,
 				B6BB711919E659DE0001088F /* Products */,
+				4527588CDE644CD4A94FA37F /* Pods-CJWUtils.xcconfig */,
+				EE74EBFF45F74355BAAA503E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,10 +135,28 @@
 		B6BB714119E65E070001088F /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				B6BB714519E668F30001088F /* cache */,
 				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		B6BB714519E668F30001088F /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB714619E669030001088F /* CJWCacheUtils.h */,
+				B6BB714719E669030001088F /* CJWCacheUtils.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		EE74EBFF45F74355BAAA503E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6BB713B19E659DE0001088F /* Build configuration list for PBXNativeTarget "CJWUtils" */;
 			buildPhases = (
+				62ADAE907B0E4BD2AEA73EE4 /* Check Pods Manifest.lock */,
 				B6BB711419E659DE0001088F /* Sources */,
 				B6BB711519E659DE0001088F /* Frameworks */,
 				B6BB711619E659DE0001088F /* Resources */,
+				CBE05AB7AD8F4A4A9AE4882C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,12 +256,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		62ADAE907B0E4BD2AEA73EE4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE05AB7AD8F4A4A9AE4882C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CJWUtils-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6BB711419E659DE0001088F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
+				B6BB714819E669030001088F /* CJWCacheUtils.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,
@@ -357,6 +420,7 @@
 		};
 		B6BB713C19E659DE0001088F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4527588CDE644CD4A94FA37F /* Pods-CJWUtils.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CJWUtils/Info.plist;
@@ -367,6 +431,7 @@
 		};
 		B6BB713D19E659DE0001088F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4527588CDE644CD4A94FA37F /* Pods-CJWUtils.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CJWUtils/Info.plist;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>30CFFA07-894C-4974-BA50-5571C4AD1C1C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CJWUtils</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7EB4FACE71B771C2A88C8CF56C47B1D87EBA3363</key>
+		<string>https://github.com/frankcjwen/CJWUtils.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CJWUtils.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7EB4FACE71B771C2A88C8CF56C47B1D87EBA3363</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/frankcjwen/CJWUtils.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7EB4FACE71B771C2A88C8CF56C47B1D87EBA3363</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7EB4FACE71B771C2A88C8CF56C47B1D87EBA3363</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CJWUtils</string>
+		</dict>
+	</array>
+</dict>
+</plist>

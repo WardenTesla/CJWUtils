@@ -22,14 +22,24 @@
 		B6BB715819E66F8E0001088F /* CJWNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715019E66F8E0001088F /* CJWNetworkActivityIndicator.m */; };
 		B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715219E66F8E0001088F /* CJWProgressHUD.m */; };
 		B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715419E66F8E0001088F /* NSString+Validate.m */; };
-		B6BB716E19E673E30001088F /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6BB715E19E673E30001088F /* MJRefresh.bundle */; };
-		B6BB716F19E673E30001088F /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716119E673E30001088F /* MJRefreshBaseView.m */; };
-		B6BB717019E673E30001088F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716319E673E30001088F /* MJRefreshConst.m */; };
-		B6BB717119E673E30001088F /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716519E673E30001088F /* MJRefreshFooterView.m */; };
-		B6BB717219E673E30001088F /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716719E673E30001088F /* MJRefreshHeaderView.m */; };
-		B6BB717319E673E30001088F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716919E673E30001088F /* UIScrollView+MJExtension.m */; };
-		B6BB717419E673E30001088F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716B19E673E30001088F /* UIScrollView+MJRefresh.m */; };
-		B6BB717519E673E30001088F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB716D19E673E30001088F /* UIView+MJExtension.m */; };
+		B6BB718719E676340001088F /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6BB717719E676340001088F /* MJRefresh.bundle */; };
+		B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB717A19E676340001088F /* MJRefreshBaseView.m */; };
+		B6BB718919E676340001088F /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB717C19E676340001088F /* MJRefreshConst.m */; };
+		B6BB718A19E676340001088F /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB717E19E676340001088F /* MJRefreshFooterView.m */; };
+		B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB718019E676340001088F /* MJRefreshHeaderView.m */; };
+		B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB718219E676340001088F /* UIScrollView+MJExtension.m */; };
+		B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB718419E676340001088F /* UIScrollView+MJRefresh.m */; };
+		B6BB718E19E676340001088F /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB718619E676340001088F /* UIView+MJExtension.m */; };
+		B6BB71A019E6774A0001088F /* bitstream.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719019E6774A0001088F /* bitstream.c */; };
+		B6BB71A119E6774A0001088F /* mask.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719219E6774A0001088F /* mask.c */; };
+		B6BB71A219E6774A0001088F /* QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719519E6774A0001088F /* QRCodeGenerator.m */; };
+		B6BB71A319E6774A0001088F /* qrencode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719619E6774A0001088F /* qrencode.c */; };
+		B6BB71A419E6774A0001088F /* qrinput.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719819E6774A0001088F /* qrinput.c */; };
+		B6BB71A519E6774A0001088F /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719A19E6774A0001088F /* qrspec.c */; };
+		B6BB71A619E6774A0001088F /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719C19E6774A0001088F /* rscode.c */; };
+		B6BB71A719E6774A0001088F /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719E19E6774A0001088F /* split.c */; };
+		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; };
+		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,23 +81,44 @@
 		B6BB715219E66F8E0001088F /* CJWProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressHUD.m; sourceTree = "<group>"; };
 		B6BB715319E66F8E0001088F /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
 		B6BB715419E66F8E0001088F /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
-		B6BB715C19E670240001088F /* CJWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
-		B6BB715E19E673E30001088F /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
-		B6BB715F19E673E30001088F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
-		B6BB716019E673E30001088F /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
-		B6BB716119E673E30001088F /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
-		B6BB716219E673E30001088F /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
-		B6BB716319E673E30001088F /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
-		B6BB716419E673E30001088F /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
-		B6BB716519E673E30001088F /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
-		B6BB716619E673E30001088F /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
-		B6BB716719E673E30001088F /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
-		B6BB716819E673E30001088F /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		B6BB716919E673E30001088F /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
-		B6BB716A19E673E30001088F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
-		B6BB716B19E673E30001088F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		B6BB716C19E673E30001088F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
-		B6BB716D19E673E30001088F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		B6BB717719E676340001088F /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		B6BB717819E676340001088F /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		B6BB717919E676340001088F /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		B6BB717A19E676340001088F /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		B6BB717B19E676340001088F /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		B6BB717C19E676340001088F /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		B6BB717D19E676340001088F /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		B6BB717E19E676340001088F /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		B6BB717F19E676340001088F /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		B6BB718019E676340001088F /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		B6BB718119E676340001088F /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		B6BB718219E676340001088F /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		B6BB718319E676340001088F /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		B6BB718419E676340001088F /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		B6BB718519E676340001088F /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		B6BB718619E676340001088F /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		B6BB719019E6774A0001088F /* bitstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitstream.c; sourceTree = "<group>"; };
+		B6BB719119E6774A0001088F /* bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		B6BB719219E6774A0001088F /* mask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mask.c; sourceTree = "<group>"; };
+		B6BB719319E6774A0001088F /* mask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mask.h; sourceTree = "<group>"; };
+		B6BB719419E6774A0001088F /* QRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeGenerator.h; sourceTree = "<group>"; };
+		B6BB719519E6774A0001088F /* QRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeGenerator.m; sourceTree = "<group>"; };
+		B6BB719619E6774A0001088F /* qrencode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrencode.c; sourceTree = "<group>"; };
+		B6BB719719E6774A0001088F /* qrencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrencode.h; sourceTree = "<group>"; };
+		B6BB719819E6774A0001088F /* qrinput.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrinput.c; sourceTree = "<group>"; };
+		B6BB719919E6774A0001088F /* qrinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrinput.h; sourceTree = "<group>"; };
+		B6BB719A19E6774A0001088F /* qrspec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qrspec.c; sourceTree = "<group>"; };
+		B6BB719B19E6774A0001088F /* qrspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qrspec.h; sourceTree = "<group>"; };
+		B6BB719C19E6774A0001088F /* rscode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rscode.c; sourceTree = "<group>"; };
+		B6BB719D19E6774A0001088F /* rscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rscode.h; sourceTree = "<group>"; };
+		B6BB719E19E6774A0001088F /* split.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = split.c; sourceTree = "<group>"; };
+		B6BB719F19E6774A0001088F /* split.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = split.h; sourceTree = "<group>"; };
+		B6BB71A919E678000001088F /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		B6BB71AA19E678000001088F /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		B6BB71AB19E678000001088F /* Base64Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Defines.h; sourceTree = "<group>"; };
+		B6BB71AC19E678000001088F /* CJWDesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWDesEncrypt.h; sourceTree = "<group>"; };
+		B6BB71AD19E678000001088F /* CJWDesEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWDesEncrypt.m; sourceTree = "<group>"; };
+		B6BB71B319E6788D0001088F /* CJWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -133,6 +164,10 @@
 		B6BB711A19E659DE0001088F /* CJWUtils */ = {
 			isa = PBXGroup;
 			children = (
+				B6BB71B219E6787F0001088F /* CJWUtils */,
+				B6BB71A819E678000001088F /* encrypt */,
+				B6BB718F19E6774A0001088F /* libqrencode */,
+				B6BB717619E676340001088F /* MJRefresh */,
 				B6BB714119E65E070001088F /* utils */,
 				B6BB711F19E659DE0001088F /* AppDelegate.h */,
 				B6BB712019E659DE0001088F /* AppDelegate.m */,
@@ -175,7 +210,6 @@
 		B6BB714119E65E070001088F /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				B6BB715D19E673E30001088F /* MJRefresh */,
 				B6BB714919E66F8E0001088F /* CJWAlert.h */,
 				B6BB714A19E66F8E0001088F /* CJWAlert.m */,
 				B6BB714B19E66F8E0001088F /* CJWCacheUtils.h */,
@@ -190,32 +224,74 @@
 				B6BB715419E66F8E0001088F /* NSString+Validate.m */,
 				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
-				B6BB715C19E670240001088F /* CJWUtils.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
 		};
-		B6BB715D19E673E30001088F /* MJRefresh */ = {
+		B6BB717619E676340001088F /* MJRefresh */ = {
 			isa = PBXGroup;
 			children = (
-				B6BB715E19E673E30001088F /* MJRefresh.bundle */,
-				B6BB715F19E673E30001088F /* MJRefresh.h */,
-				B6BB716019E673E30001088F /* MJRefreshBaseView.h */,
-				B6BB716119E673E30001088F /* MJRefreshBaseView.m */,
-				B6BB716219E673E30001088F /* MJRefreshConst.h */,
-				B6BB716319E673E30001088F /* MJRefreshConst.m */,
-				B6BB716419E673E30001088F /* MJRefreshFooterView.h */,
-				B6BB716519E673E30001088F /* MJRefreshFooterView.m */,
-				B6BB716619E673E30001088F /* MJRefreshHeaderView.h */,
-				B6BB716719E673E30001088F /* MJRefreshHeaderView.m */,
-				B6BB716819E673E30001088F /* UIScrollView+MJExtension.h */,
-				B6BB716919E673E30001088F /* UIScrollView+MJExtension.m */,
-				B6BB716A19E673E30001088F /* UIScrollView+MJRefresh.h */,
-				B6BB716B19E673E30001088F /* UIScrollView+MJRefresh.m */,
-				B6BB716C19E673E30001088F /* UIView+MJExtension.h */,
-				B6BB716D19E673E30001088F /* UIView+MJExtension.m */,
+				B6BB717719E676340001088F /* MJRefresh.bundle */,
+				B6BB717819E676340001088F /* MJRefresh.h */,
+				B6BB717919E676340001088F /* MJRefreshBaseView.h */,
+				B6BB717A19E676340001088F /* MJRefreshBaseView.m */,
+				B6BB717B19E676340001088F /* MJRefreshConst.h */,
+				B6BB717C19E676340001088F /* MJRefreshConst.m */,
+				B6BB717D19E676340001088F /* MJRefreshFooterView.h */,
+				B6BB717E19E676340001088F /* MJRefreshFooterView.m */,
+				B6BB717F19E676340001088F /* MJRefreshHeaderView.h */,
+				B6BB718019E676340001088F /* MJRefreshHeaderView.m */,
+				B6BB718119E676340001088F /* UIScrollView+MJExtension.h */,
+				B6BB718219E676340001088F /* UIScrollView+MJExtension.m */,
+				B6BB718319E676340001088F /* UIScrollView+MJRefresh.h */,
+				B6BB718419E676340001088F /* UIScrollView+MJRefresh.m */,
+				B6BB718519E676340001088F /* UIView+MJExtension.h */,
+				B6BB718619E676340001088F /* UIView+MJExtension.m */,
 			);
 			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		B6BB718F19E6774A0001088F /* libqrencode */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB719019E6774A0001088F /* bitstream.c */,
+				B6BB719119E6774A0001088F /* bitstream.h */,
+				B6BB719219E6774A0001088F /* mask.c */,
+				B6BB719319E6774A0001088F /* mask.h */,
+				B6BB719419E6774A0001088F /* QRCodeGenerator.h */,
+				B6BB719519E6774A0001088F /* QRCodeGenerator.m */,
+				B6BB719619E6774A0001088F /* qrencode.c */,
+				B6BB719719E6774A0001088F /* qrencode.h */,
+				B6BB719819E6774A0001088F /* qrinput.c */,
+				B6BB719919E6774A0001088F /* qrinput.h */,
+				B6BB719A19E6774A0001088F /* qrspec.c */,
+				B6BB719B19E6774A0001088F /* qrspec.h */,
+				B6BB719C19E6774A0001088F /* rscode.c */,
+				B6BB719D19E6774A0001088F /* rscode.h */,
+				B6BB719E19E6774A0001088F /* split.c */,
+				B6BB719F19E6774A0001088F /* split.h */,
+			);
+			path = libqrencode;
+			sourceTree = "<group>";
+		};
+		B6BB71A819E678000001088F /* encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB71A919E678000001088F /* Base64.h */,
+				B6BB71AA19E678000001088F /* Base64.m */,
+				B6BB71AB19E678000001088F /* Base64Defines.h */,
+				B6BB71AC19E678000001088F /* CJWDesEncrypt.h */,
+				B6BB71AD19E678000001088F /* CJWDesEncrypt.m */,
+			);
+			path = encrypt;
+			sourceTree = "<group>";
+		};
+		B6BB71B219E6787F0001088F /* CJWUtils */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB71B319E6788D0001088F /* CJWUtils.h */,
+			);
+			path = CJWUtils;
 			sourceTree = "<group>";
 		};
 		EE74EBFF45F74355BAAA503E /* Frameworks */ = {
@@ -310,7 +386,7 @@
 			files = (
 				B6BB712719E659DE0001088F /* Main.storyboard in Resources */,
 				B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */,
-				B6BB716E19E673E30001088F /* MJRefresh.bundle in Resources */,
+				B6BB718719E676340001088F /* MJRefresh.bundle in Resources */,
 				B6BB712919E659DE0001088F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,21 +438,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BB71AE19E678000001088F /* Base64.m in Sources */,
 				B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */,
+				B6BB71A619E6774A0001088F /* rscode.c in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
-				B6BB717219E673E30001088F /* MJRefreshHeaderView.m in Sources */,
+				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,
+				B6BB71A519E6774A0001088F /* qrspec.c in Sources */,
 				B6BB715819E66F8E0001088F /* CJWNetworkActivityIndicator.m in Sources */,
-				B6BB717119E673E30001088F /* MJRefreshFooterView.m in Sources */,
+				B6BB718A19E676340001088F /* MJRefreshFooterView.m in Sources */,
+				B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */,
+				B6BB71A219E6774A0001088F /* QRCodeGenerator.m in Sources */,
+				B6BB71A719E6774A0001088F /* split.c in Sources */,
 				B6BB715519E66F8E0001088F /* CJWAlert.m in Sources */,
 				B6BB715719E66F8E0001088F /* CJWHttpUtils.m in Sources */,
+				B6BB71A019E6774A0001088F /* bitstream.c in Sources */,
+				B6BB71A419E6774A0001088F /* qrinput.c in Sources */,
+				B6BB71A119E6774A0001088F /* mask.c in Sources */,
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
-				B6BB716F19E673E30001088F /* MJRefreshBaseView.m in Sources */,
-				B6BB717319E673E30001088F /* UIScrollView+MJExtension.m in Sources */,
+				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,
+				B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
-				B6BB717019E673E30001088F /* MJRefreshConst.m in Sources */,
-				B6BB717419E673E30001088F /* UIScrollView+MJRefresh.m in Sources */,
-				B6BB717519E673E30001088F /* UIView+MJExtension.m in Sources */,
+				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,
+				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,
+				B6BB718E19E676340001088F /* UIView+MJExtension.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
+				B6BB71A319E6774A0001088F /* qrencode.c in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,
 			);

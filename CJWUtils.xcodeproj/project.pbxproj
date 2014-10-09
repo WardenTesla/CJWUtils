@@ -38,8 +38,9 @@
 		B6BB71A519E6774A0001088F /* qrspec.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719A19E6774A0001088F /* qrspec.c */; };
 		B6BB71A619E6774A0001088F /* rscode.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719C19E6774A0001088F /* rscode.c */; };
 		B6BB71A719E6774A0001088F /* split.c in Sources */ = {isa = PBXBuildFile; fileRef = B6BB719E19E6774A0001088F /* split.c */; };
-		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; };
+		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
+		B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		B6BB71AC19E678000001088F /* CJWDesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWDesEncrypt.h; sourceTree = "<group>"; };
 		B6BB71AD19E678000001088F /* CJWDesEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWDesEncrypt.m; sourceTree = "<group>"; };
 		B6BB71B319E6788D0001088F /* CJWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
+		B6BB71B519E6823D0001088F /* UIImageView+CJWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CJWImage.h"; sourceTree = "<group>"; };
+		B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CJWImage.m"; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +167,7 @@
 		B6BB711A19E659DE0001088F /* CJWUtils */ = {
 			isa = PBXGroup;
 			children = (
+				B6BB71B419E682130001088F /* UI */,
 				B6BB71B219E6787F0001088F /* CJWUtils */,
 				B6BB71A819E678000001088F /* encrypt */,
 				B6BB718F19E6774A0001088F /* libqrencode */,
@@ -292,6 +296,15 @@
 				B6BB71B319E6788D0001088F /* CJWUtils.h */,
 			);
 			path = CJWUtils;
+			sourceTree = "<group>";
+		};
+		B6BB71B419E682130001088F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B6BB71B519E6823D0001088F /* UIImageView+CJWImage.h */,
+				B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		EE74EBFF45F74355BAAA503E /* Frameworks */ = {
@@ -457,6 +470,7 @@
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
 				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,
 				B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */,
+				B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
 				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,
 				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,

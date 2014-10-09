@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CJWHttpUtils.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *str = @"dsa";
 }
 
 - (void)didReceiveMemoryWarning {

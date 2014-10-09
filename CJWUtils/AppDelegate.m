@@ -7,7 +7,14 @@
 //
 
 #import "AppDelegate.h"
-
+/*
+ pod "AFNetworking"
+ pod "SDWebImage"
+ pod "EDStarRating"
+ pod "MBProgressHUD"
+ pod "CGFloatType"
+ pod "TMCache"
+ */
 @interface AppDelegate ()
 
 @end

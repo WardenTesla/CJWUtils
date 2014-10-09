@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
 
   s.subspec 'Refresh' do |ss|
-    ss.source_files = 'CJWUtils/utils/MJRefresh/*'
+    ss.source_files = "CRefresh",'CJWUtils/utils/MJRefresh/*'
   end
 
   # s.public_header_files = "Classes/**/*.h"

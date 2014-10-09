@@ -16,7 +16,12 @@
 		B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BB712A19E659DE0001088F /* LaunchScreen.xib */; };
 		B6BB713819E659DE0001088F /* CJWUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB713719E659DE0001088F /* CJWUtilsTests.m */; };
 		B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */; };
-		B6BB714819E669030001088F /* CJWCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714719E669030001088F /* CJWCacheUtils.m */; };
+		B6BB715519E66F8E0001088F /* CJWAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714A19E66F8E0001088F /* CJWAlert.m */; };
+		B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714C19E66F8E0001088F /* CJWCacheUtils.m */; };
+		B6BB715719E66F8E0001088F /* CJWHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB714E19E66F8E0001088F /* CJWHttpUtils.m */; };
+		B6BB715819E66F8E0001088F /* CJWNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715019E66F8E0001088F /* CJWNetworkActivityIndicator.m */; };
+		B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715219E66F8E0001088F /* CJWProgressHUD.m */; };
+		B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB715419E66F8E0001088F /* NSString+Validate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +51,18 @@
 		B6BB713719E659DE0001088F /* CJWUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJWUtilsTests.m; sourceTree = "<group>"; };
 		B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkActivityIndicator.h; sourceTree = "<group>"; };
 		B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkActivityIndicator.m; sourceTree = "<group>"; };
-		B6BB714619E669030001088F /* CJWCacheUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCacheUtils.h; sourceTree = "<group>"; };
-		B6BB714719E669030001088F /* CJWCacheUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCacheUtils.m; sourceTree = "<group>"; };
+		B6BB714919E66F8E0001088F /* CJWAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWAlert.h; sourceTree = "<group>"; };
+		B6BB714A19E66F8E0001088F /* CJWAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWAlert.m; sourceTree = "<group>"; };
+		B6BB714B19E66F8E0001088F /* CJWCacheUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCacheUtils.h; sourceTree = "<group>"; };
+		B6BB714C19E66F8E0001088F /* CJWCacheUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCacheUtils.m; sourceTree = "<group>"; };
+		B6BB714D19E66F8E0001088F /* CJWHttpUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWHttpUtils.h; sourceTree = "<group>"; };
+		B6BB714E19E66F8E0001088F /* CJWHttpUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWHttpUtils.m; sourceTree = "<group>"; };
+		B6BB714F19E66F8E0001088F /* CJWNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWNetworkActivityIndicator.h; sourceTree = "<group>"; };
+		B6BB715019E66F8E0001088F /* CJWNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWNetworkActivityIndicator.m; sourceTree = "<group>"; };
+		B6BB715119E66F8E0001088F /* CJWProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWProgressHUD.h; sourceTree = "<group>"; };
+		B6BB715219E66F8E0001088F /* CJWProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWProgressHUD.m; sourceTree = "<group>"; };
+		B6BB715319E66F8E0001088F /* NSString+Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Validate.h"; sourceTree = "<group>"; };
+		B6BB715419E66F8E0001088F /* NSString+Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validate.m"; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,20 +150,22 @@
 		B6BB714119E65E070001088F /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				B6BB714519E668F30001088F /* cache */,
+				B6BB714919E66F8E0001088F /* CJWAlert.h */,
+				B6BB714A19E66F8E0001088F /* CJWAlert.m */,
+				B6BB714B19E66F8E0001088F /* CJWCacheUtils.h */,
+				B6BB714C19E66F8E0001088F /* CJWCacheUtils.m */,
+				B6BB714D19E66F8E0001088F /* CJWHttpUtils.h */,
+				B6BB714E19E66F8E0001088F /* CJWHttpUtils.m */,
+				B6BB714F19E66F8E0001088F /* CJWNetworkActivityIndicator.h */,
+				B6BB715019E66F8E0001088F /* CJWNetworkActivityIndicator.m */,
+				B6BB715119E66F8E0001088F /* CJWProgressHUD.h */,
+				B6BB715219E66F8E0001088F /* CJWProgressHUD.m */,
+				B6BB715319E66F8E0001088F /* NSString+Validate.h */,
+				B6BB715419E66F8E0001088F /* NSString+Validate.m */,
 				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
 			);
 			path = utils;
-			sourceTree = "<group>";
-		};
-		B6BB714519E668F30001088F /* cache */ = {
-			isa = PBXGroup;
-			children = (
-				B6BB714619E669030001088F /* CJWCacheUtils.h */,
-				B6BB714719E669030001088F /* CJWCacheUtils.m */,
-			);
-			path = cache;
 			sourceTree = "<group>";
 		};
 		EE74EBFF45F74355BAAA503E /* Frameworks */ = {
@@ -294,8 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */,
+				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
+				B6BB715819E66F8E0001088F /* CJWNetworkActivityIndicator.m in Sources */,
+				B6BB715519E66F8E0001088F /* CJWAlert.m in Sources */,
+				B6BB715719E66F8E0001088F /* CJWHttpUtils.m in Sources */,
+				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
-				B6BB714819E669030001088F /* CJWCacheUtils.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,

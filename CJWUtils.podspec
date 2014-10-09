@@ -94,7 +94,19 @@ Pod::Spec.new do |s|
   s.exclude_files = "Classes/Exclude"
 
   s.subspec 'Refresh' do |ss|
-    ss.source_files = "CRefresh",'CJWUtils/utils/MJRefresh/*'
+    ss.source_files = 'CJWUtils/MJRefresh/*'
+  end
+  
+  s.subspec 'QRCode' do |ss|
+    ss.source_files = 'CJWUtils/libqrencode/*'
+  end
+  
+  s.subspec 'Encrypt' do |ss|
+    ss.source_files = 'CJWUtils/encrypt/*'
+  end
+  
+  s.subspec 'header' do |ss|
+    ss.source_files = 'CJWUtils/CJWUtils/*'
   end
 
   # s.public_header_files = "Classes/**/*.h"

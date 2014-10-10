@@ -11,5 +11,4 @@
 @interface UIImageView (CJWImage)
 
 
--(void)setimageWithUrl:(NSString *)url;
 @end

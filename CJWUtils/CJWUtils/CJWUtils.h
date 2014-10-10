@@ -16,7 +16,6 @@
 #import "CJWProgressHUD.h"
 #import "NSString+Validate.h"
 #import "CJWDesEncrypt.h"
-#import "QRCodeGenerator.h"
 #import "MJRefresh.h"
 #import "CJWQRCode.h"
 

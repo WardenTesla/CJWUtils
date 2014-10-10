@@ -109,6 +109,10 @@ Pod::Spec.new do |s|
   s.subspec 'header' do |ss|
     ss.source_files = 'CJWUtils/CJWUtils/*'
   end
+  
+  s.subspec 'UI' do |ss|
+    ss.source_files = 'CJWUtils/UI/*'
+  end
 
   # s.public_header_files = "Classes/**/*.h"
 

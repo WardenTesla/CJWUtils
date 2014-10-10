@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8535FD3BFB8249AA95D8689E /* libPods-CJWUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */; };
+		B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B62935FE19E7829000EC9E44 /* CJWQRCode.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
 		B6BB712119E659DE0001088F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712019E659DE0001088F /* AppDelegate.m */; };
 		B6BB712419E659DE0001088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712319E659DE0001088F /* ViewController.m */; };
@@ -55,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		4527588CDE644CD4A94FA37F /* Pods-CJWUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJWUtils.xcconfig"; path = "Pods/Pods-CJWUtils.xcconfig"; sourceTree = "<group>"; };
+		B62935FD19E7829000EC9E44 /* CJWQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWQRCode.h; sourceTree = "<group>"; };
+		B62935FE19E7829000EC9E44 /* CJWQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWQRCode.m; sourceTree = "<group>"; };
 		B6BB711819E659DE0001088F /* CJWUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJWUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB711C19E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB711D19E659DE0001088F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				B6BB719D19E6774A0001088F /* rscode.h */,
 				B6BB719E19E6774A0001088F /* split.c */,
 				B6BB719F19E6774A0001088F /* split.h */,
+				B62935FD19E7829000EC9E44 /* CJWQRCode.h */,
+				B62935FE19E7829000EC9E44 /* CJWQRCode.m */,
 			);
 			path = libqrencode;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
 				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,
 				B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */,
+				B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */,
 				B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
 				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,

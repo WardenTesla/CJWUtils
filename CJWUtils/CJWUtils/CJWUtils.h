@@ -19,5 +19,6 @@
 #import "MJRefresh.h"
 #import "CJWQRCode.h"
 #import "CGFloatType.h"
+#import "UITableView+CJWTabelView.h"
 
 #endif

@@ -18,5 +18,6 @@
 #import "CJWDesEncrypt.h"
 #import "MJRefresh.h"
 #import "CJWQRCode.h"
+#import "CGFloatType.h"
 
 #endif

@@ -18,7 +18,7 @@
 @interface UIImageView (CJWQRCode)
 
 -(void)qrcodeWith:(NSString *)string;
--(void)qrcodeWith:(NSString *)string logo:(UIImage *)image;
+//-(void)qrcodeWith:(NSString *)string logo:(UIImage *)image;
 
 
 @end

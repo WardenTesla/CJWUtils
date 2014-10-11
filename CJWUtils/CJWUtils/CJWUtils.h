@@ -21,5 +21,6 @@
 #import "CGFloatType.h"
 #import "UITableView+CJWTabelView.h"
 #import "CJWEncode.h"
+#import "UIColor+FlatUI.h"
 
 #endif

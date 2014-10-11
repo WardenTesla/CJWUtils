@@ -43,6 +43,7 @@
 		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
 		B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */; };
+		B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1C7C119E8CCE9002E459D /* CJWEncode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		B6BB71B319E6788D0001088F /* CJWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
 		B6BB71B519E6823D0001088F /* UIImageView+CJWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CJWImage.h"; sourceTree = "<group>"; };
 		B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CJWImage.m"; sourceTree = "<group>"; };
+		B6F1C7C019E8CCE9002E459D /* CJWEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWEncode.h; sourceTree = "<group>"; };
+		B6F1C7C119E8CCE9002E459D /* CJWEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWEncode.m; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -221,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				B6BB714919E66F8E0001088F /* CJWAlert.h */,
+				B6F1C7C019E8CCE9002E459D /* CJWEncode.h */,
+				B6F1C7C119E8CCE9002E459D /* CJWEncode.m */,
 				B6BB714A19E66F8E0001088F /* CJWAlert.m */,
 				B6BB714B19E66F8E0001088F /* CJWCacheUtils.h */,
 				B6BB714C19E66F8E0001088F /* CJWCacheUtils.m */,
@@ -464,6 +469,7 @@
 				B6BB71AE19E678000001088F /* Base64.m in Sources */,
 				B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */,
 				B6BB71A619E6774A0001088F /* rscode.c in Sources */,
+				B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,
 				B6BB71A519E6774A0001088F /* qrspec.c in Sources */,

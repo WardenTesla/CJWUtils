@@ -16,3 +16,11 @@
 + (NSString*)encrypt:(NSString*)plainText key:(NSString *)key;
 + (NSString*)decrypt:(NSString*)encryptText  key:(NSString *)key;
 @end
+
+
+@interface NSString (CJWDesEncrypt)
+
+-(NSString *)encrypt;
+-(NSString *)decrypt;
+
+@end

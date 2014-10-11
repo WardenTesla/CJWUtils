@@ -153,3 +153,16 @@
 }
 
 @end
+
+
+@implementation NSString (CJWDesEncrypt)
+
+-(NSString *)encrypt{
+    return [CJWDesEncrypt encrypt:self];
+}
+
+-(NSString *)decrypt{
+    return [CJWDesEncrypt decrypt:self];
+}
+
+@end

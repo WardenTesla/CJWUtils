@@ -23,4 +23,10 @@
     self.image = [QRCodeGenerator qrImageForString:string imageSize:self.frame.size.width];
 }
 
+//-(void)qrcodeWith:(NSString *)string logo:(UIImage *)image{;
+//    NSLayoutConstraint *c1 = [NSLayoutConstraint constraintWithItem:img attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:0 constant:1000];
+//    
+//    NSLayoutConstraint *c2 = [NSLayoutConstraint constraintWithItem:img attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:0 constant:1000];
+//}
+
 @end

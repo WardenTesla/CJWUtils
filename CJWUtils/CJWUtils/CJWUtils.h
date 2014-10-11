@@ -20,5 +20,6 @@
 #import "CJWQRCode.h"
 #import "CGFloatType.h"
 #import "UITableView+CJWTabelView.h"
+#import "CJWEncode.h"
 
 #endif

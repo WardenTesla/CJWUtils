@@ -23,8 +23,9 @@
     CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
 //    [user setPhoneNumber:phone];
 //    [user setPhoneNumber:@"cao"];
-    NSString *ppp = user.phoneNumber;
-    NSLog(@"phone [%@]",ppp);
+    user.nickName = @"123";
+//    NSString *ppp = user.phoneNumber;
+//    NSLog(@"phone [%@]",ppp);
 //    user.nickName = @"蠢蠢猪🐷";
     NSLog(@"{[[[%@",user.nickName);
 //    NSLog(@"\n%@",[AESCrypt encrypt:phone password:@"hello"]);

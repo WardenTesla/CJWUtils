@@ -64,6 +64,7 @@
 }
 
 -(NSString *)aesDecrypt{
+    NSLog(@"str de");
     return [AESCrypt decrypt:self password:PASSWORD];
 }
 
@@ -76,6 +77,7 @@
 @implementation NSData (CJWAesEncrypt)
 
 -(NSString *)aesDecrypt{
+    NSLog(@"data de");
     return [CJWAesEncrypt decrypt:self];
 }
 

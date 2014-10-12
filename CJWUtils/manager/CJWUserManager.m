@@ -37,8 +37,14 @@
 
 -(NSString *)getDefaultByKey:(NSString *)key{
     NSString *saveKey = [self getSaveKey:key];
-    NSString *object = [userDefault objectForKey:saveKey];
+    id object = [userDefault objectForKey:saveKey];
     if (object != nil) {
+        if ([object isKindOfClass:[NSData class]]) {
+            NSLog(@"data");
+        }
+        if ([object isKindOfClass:[NSString class]]) {
+            NSLog(@"str");
+        }
         return [object aesDecrypt];
     }else{
         return EMPTY_STRING;

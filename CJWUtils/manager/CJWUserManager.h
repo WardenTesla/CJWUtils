@@ -16,4 +16,7 @@
 @property (nonatomic,weak) NSString *password;
 
 
+-(NSString *)getSaveKey:(NSString *)key;
+-(void)saveDefault:(NSString *)object forKey:(NSString *)key;
+
 @end

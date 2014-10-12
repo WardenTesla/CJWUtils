@@ -10,7 +10,20 @@
 		8535FD3BFB8249AA95D8689E /* libPods-CJWUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */; };
 		B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B62935FE19E7829000EC9E44 /* CJWQRCode.m */; };
 		B629360519E7B24D00EC9E44 /* UITableView+CJWTabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B629360419E7B24D00EC9E44 /* UITableView+CJWTabelView.m */; };
+		B63B8FB719EA4F630075B8A0 /* CJWAesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */; };
+		B63B8FC319EA50E60075B8A0 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FBC19EA50E60075B8A0 /* RNCryptor.m */; };
+		B63B8FC419EA50E60075B8A0 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FBE19EA50E60075B8A0 /* RNCryptorEngine.m */; };
+		B63B8FC519EA50E60075B8A0 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FC019EA50E60075B8A0 /* RNDecryptor.m */; };
+		B63B8FC619EA50E60075B8A0 /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FC219EA50E60075B8A0 /* RNEncryptor.m */; };
+		B63B8FE619EA5F520075B8A0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B63B8FDB19EA5F520075B8A0 /* .gitignore */; };
+		B63B8FE719EA5F520075B8A0 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FDD19EA5F520075B8A0 /* AESCrypt.m */; };
+		B63B8FE819EA5F520075B8A0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B63B8FDE19EA5F520075B8A0 /* LICENSE */; };
+		B63B8FE919EA5F520075B8A0 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE019EA5F520075B8A0 /* NSData+Base64.m */; };
+		B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE219EA5F520075B8A0 /* NSData+CommonCrypto.m */; };
+		B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */; };
+		B63B8FEC19EA5F520075B8A0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE519EA5F520075B8A0 /* README.md */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
+		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
 		B6BB712119E659DE0001088F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712019E659DE0001088F /* AppDelegate.m */; };
 		B6BB712419E659DE0001088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712319E659DE0001088F /* ViewController.m */; };
@@ -63,8 +76,33 @@
 		B62935FE19E7829000EC9E44 /* CJWQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWQRCode.m; sourceTree = "<group>"; };
 		B629360319E7B24D00EC9E44 /* UITableView+CJWTabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CJWTabelView.h"; sourceTree = "<group>"; };
 		B629360419E7B24D00EC9E44 /* UITableView+CJWTabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CJWTabelView.m"; sourceTree = "<group>"; };
+		B63B8FB519EA4F630075B8A0 /* CJWAesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWAesEncrypt.h; sourceTree = "<group>"; };
+		B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWAesEncrypt.m; sourceTree = "<group>"; };
+		B63B8FB919EA50E60075B8A0 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		B63B8FBA19EA50E60075B8A0 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		B63B8FBB19EA50E60075B8A0 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		B63B8FBC19EA50E60075B8A0 /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		B63B8FBD19EA50E60075B8A0 /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		B63B8FBE19EA50E60075B8A0 /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		B63B8FBF19EA50E60075B8A0 /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		B63B8FC019EA50E60075B8A0 /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		B63B8FC119EA50E60075B8A0 /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		B63B8FC219EA50E60075B8A0 /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		B63B8FDB19EA5F520075B8A0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B63B8FDC19EA5F520075B8A0 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		B63B8FDD19EA5F520075B8A0 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		B63B8FDE19EA5F520075B8A0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B63B8FDF19EA5F520075B8A0 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		B63B8FE019EA5F520075B8A0 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		B63B8FE119EA5F520075B8A0 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		B63B8FE219EA5F520075B8A0 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		B63B8FE319EA5F520075B8A0 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		B63B8FE519EA5F520075B8A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6A0B1C319E9201000D44554 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
+		B6A0B1CF19E931E800D44554 /* CJWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUserManager.m; sourceTree = "<group>"; };
 		B6BB711819E659DE0001088F /* CJWUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJWUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB711C19E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB711D19E659DE0001088F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,6 +194,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B63B8FB819EA50E60075B8A0 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				B63B8FB919EA50E60075B8A0 /* RNCryptor+Private.h */,
+				B63B8FBA19EA50E60075B8A0 /* RNCryptor-Prefix.pch */,
+				B63B8FBB19EA50E60075B8A0 /* RNCryptor.h */,
+				B63B8FBC19EA50E60075B8A0 /* RNCryptor.m */,
+				B63B8FBD19EA50E60075B8A0 /* RNCryptorEngine.h */,
+				B63B8FBE19EA50E60075B8A0 /* RNCryptorEngine.m */,
+				B63B8FBF19EA50E60075B8A0 /* RNDecryptor.h */,
+				B63B8FC019EA50E60075B8A0 /* RNDecryptor.m */,
+				B63B8FC119EA50E60075B8A0 /* RNEncryptor.h */,
+				B63B8FC219EA50E60075B8A0 /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		B63B8FDA19EA5F520075B8A0 /* AESCrypt-ObjC-master */ = {
+			isa = PBXGroup;
+			children = (
+				B63B8FDB19EA5F520075B8A0 /* .gitignore */,
+				B63B8FDC19EA5F520075B8A0 /* AESCrypt.h */,
+				B63B8FDD19EA5F520075B8A0 /* AESCrypt.m */,
+				B63B8FDE19EA5F520075B8A0 /* LICENSE */,
+				B63B8FDF19EA5F520075B8A0 /* NSData+Base64.h */,
+				B63B8FE019EA5F520075B8A0 /* NSData+Base64.m */,
+				B63B8FE119EA5F520075B8A0 /* NSData+CommonCrypto.h */,
+				B63B8FE219EA5F520075B8A0 /* NSData+CommonCrypto.m */,
+				B63B8FE319EA5F520075B8A0 /* NSString+Base64.h */,
+				B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */,
+				B63B8FE519EA5F520075B8A0 /* README.md */,
+			);
+			path = "AESCrypt-ObjC-master";
+			sourceTree = "<group>";
+		};
+		B6A0B1CD19E931D500D44554 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				B6A0B1CE19E931E800D44554 /* CJWUserManager.h */,
+				B6A0B1CF19E931E800D44554 /* CJWUserManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 		B6BB710F19E659DE0001088F = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +261,7 @@
 		B6BB711A19E659DE0001088F /* CJWUtils */ = {
 			isa = PBXGroup;
 			children = (
+				B6A0B1CD19E931D500D44554 /* manager */,
 				B6BB71B419E682130001088F /* UI */,
 				B6BB71B219E6787F0001088F /* CJWUtils */,
 				B6BB71A819E678000001088F /* encrypt */,
@@ -227,9 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				B6BB714919E66F8E0001088F /* CJWAlert.h */,
+				B6BB714A19E66F8E0001088F /* CJWAlert.m */,
 				B6F1C7C019E8CCE9002E459D /* CJWEncode.h */,
 				B6F1C7C119E8CCE9002E459D /* CJWEncode.m */,
-				B6BB714A19E66F8E0001088F /* CJWAlert.m */,
 				B6BB714B19E66F8E0001088F /* CJWCacheUtils.h */,
 				B6BB714C19E66F8E0001088F /* CJWCacheUtils.m */,
 				B6BB714D19E66F8E0001088F /* CJWHttpUtils.h */,
@@ -297,11 +380,15 @@
 		B6BB71A819E678000001088F /* encrypt */ = {
 			isa = PBXGroup;
 			children = (
+				B63B8FDA19EA5F520075B8A0 /* AESCrypt-ObjC-master */,
+				B63B8FB819EA50E60075B8A0 /* RNCryptor */,
 				B6BB71A919E678000001088F /* Base64.h */,
 				B6BB71AA19E678000001088F /* Base64.m */,
 				B6BB71AB19E678000001088F /* Base64Defines.h */,
 				B6BB71AC19E678000001088F /* CJWDesEncrypt.h */,
 				B6BB71AD19E678000001088F /* CJWDesEncrypt.m */,
+				B63B8FB519EA4F630075B8A0 /* CJWAesEncrypt.h */,
+				B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */,
 			);
 			path = encrypt;
 			sourceTree = "<group>";
@@ -417,6 +504,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63B8FE819EA5F520075B8A0 /* LICENSE in Resources */,
+				B63B8FE619EA5F520075B8A0 /* .gitignore in Resources */,
 				B6BB712719E659DE0001088F /* Main.storyboard in Resources */,
 				B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */,
 				B6BB718719E676340001088F /* MJRefresh.bundle in Resources */,
@@ -471,10 +560,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63B8FC619EA50E60075B8A0 /* RNEncryptor.m in Sources */,
+				B63B8FE719EA5F520075B8A0 /* AESCrypt.m in Sources */,
 				B6BB71AE19E678000001088F /* Base64.m in Sources */,
 				B6BB715919E66F8E0001088F /* CJWProgressHUD.m in Sources */,
 				B6BB71A619E6774A0001088F /* rscode.c in Sources */,
 				B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */,
+				B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,
 				B6BB71A519E6774A0001088F /* qrspec.c in Sources */,
@@ -485,22 +577,30 @@
 				B6BB71A719E6774A0001088F /* split.c in Sources */,
 				B6BB715519E66F8E0001088F /* CJWAlert.m in Sources */,
 				B6BB715719E66F8E0001088F /* CJWHttpUtils.m in Sources */,
+				B63B8FC519EA50E60075B8A0 /* RNDecryptor.m in Sources */,
 				B6BB71A019E6774A0001088F /* bitstream.c in Sources */,
 				B629360519E7B24D00EC9E44 /* UITableView+CJWTabelView.m in Sources */,
 				B6BB71A419E6774A0001088F /* qrinput.c in Sources */,
 				B6BB71A119E6774A0001088F /* mask.c in Sources */,
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
+				B63B8FEC19EA5F520075B8A0 /* README.md in Sources */,
 				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,
 				B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */,
+				B63B8FC419EA50E60075B8A0 /* RNCryptorEngine.m in Sources */,
 				B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */,
 				B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */,
+				B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */,
+				B63B8FC319EA50E60075B8A0 /* RNCryptor.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
 				B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */,
+				B63B8FB719EA4F630075B8A0 /* CJWAesEncrypt.m in Sources */,
 				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,
+				B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */,
 				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,
 				B6BB718E19E676340001088F /* UIView+MJExtension.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
 				B6BB71A319E6774A0001088F /* qrencode.c in Sources */,
+				B63B8FE919EA5F520075B8A0 /* NSData+Base64.m in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,
 			);

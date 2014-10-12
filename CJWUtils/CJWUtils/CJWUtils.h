@@ -22,5 +22,7 @@
 #import "UITableView+CJWTabelView.h"
 #import "CJWEncode.h"
 #import "UIColor+FlatUI.h"
+#import "CJWUserManager.h"
+#import "CJWAesEncrypt.h"
 
 #endif

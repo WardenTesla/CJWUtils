@@ -102,7 +102,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'Encrypt' do |ss|
-    ss.source_files = 'CJWUtils/encrypt/*'
+    ss.source_files = 'CJWUtils/encrypt/**/*'
     ss.requires_arc = false
   end
   

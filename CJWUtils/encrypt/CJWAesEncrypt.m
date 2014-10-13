@@ -16,18 +16,18 @@
 
 @implementation CJWAesEncrypt
 
-+(NSData *)encrypt:(NSString *)plainText key:(NSString *)key{
++(NSData *)aesEncrypt:(NSString *)plainText key:(NSString *)key{
     NSData *data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
     NSData *encryptedData = [RNEncryptor encryptData:data withSettings:kRNCryptorAES256Settings password:key error:&error];
     return encryptedData;
 }
 
-+(NSData *)encrypt:(NSString *)plainText{
-    return [self encrypt:plainText key:PASSWORD];
++(NSData *)aesEncrypt:(NSString *)plainText{
+    return [self aesEncrypt:plainText key:PASSWORD];
 }
 
-+(NSString *)decrypt:(NSData *)encryptedData key:(NSString *)key{
++(NSString *)aesDecrypt:(NSData *)encryptedData key:(NSString *)key{
     NSError *error;
     NSData *decryptedData = [RNDecryptor decryptData:encryptedData
                                         withPassword:key
@@ -35,12 +35,13 @@
     if (error != nil) {
         return @"";
     }
+    NSLog(@"here");
     NSString *decrypted = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
     return decrypted;
 }
 
-+(NSString *)decrypt:(NSData *)encryptedData{
-    return [self decrypt:encryptedData key:PASSWORD];
++(NSString *)aesDecrypt:(NSData *)encryptedData{
+    return [self aesDecrypt:encryptedData key:PASSWORD];
 }
 
 @end
@@ -48,11 +49,11 @@
 @implementation NSString (CJWAesEncrypt)
 
 -(NSData *)aesEncrypt{
-    return [CJWAesEncrypt encrypt:self];
+    return [CJWAesEncrypt aesEncrypt:self];
 }
 
 -(NSData *)aesEncryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt encrypt:self key:key];
+    return [CJWAesEncrypt aesEncrypt:self key:key];
 }
 
 -(NSString *)aesEncryptToString{
@@ -78,11 +79,11 @@
 
 -(NSString *)aesDecrypt{
     NSLog(@"data de");
-    return [CJWAesEncrypt decrypt:self];
+    return [CJWAesEncrypt aesDecrypt:self];
 }
 
 -(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt decrypt:self key:key];
+    return [CJWAesEncrypt aesDecrypt:self key:key];
 }
 
 @end

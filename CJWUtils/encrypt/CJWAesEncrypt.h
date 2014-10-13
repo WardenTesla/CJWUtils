@@ -11,11 +11,11 @@
 @interface CJWAesEncrypt : NSObject
 
 
-+ (NSData *)encrypt:(NSString *)plainText;
-+ (NSString *)decrypt:(NSData *)encryptedData;
++ (NSData *)aesEncrypt:(NSString *)plainText;
++ (NSString *)aesDecrypt:(NSData *)encryptedData;
 
-+ (NSData *)encrypt:(NSString *)plainText key:(NSString *)key;
-+ (NSString *)decrypt:(NSData *)encryptedData  key:(NSString *)key;
++ (NSData *)aesEncrypt:(NSString *)plainText key:(NSString *)key;
++ (NSString *)aesDecrypt:(NSData *)encryptedData  key:(NSString *)key;
 
 @end
 

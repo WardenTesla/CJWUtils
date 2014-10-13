@@ -23,6 +23,6 @@
 #import "CJWEncode.h"
 #import "UIColor+FlatUI.h"
 #import "CJWUserManager.h"
-#import "CJWAesEncrypt.h"
+#import "CJWCrypt.h"
 
 #endif

@@ -1,23 +1,19 @@
 //
-//  CJWAesEncrypt.m
-//  CJWUtils
+//  CJWCrypt.m
+//  Pods
 //
-//  Created by cen on 12/10/14.
-//  Copyright (c) 2014 cen. All rights reserved.
+//  Created by cen on 13/10/14.
+//
 //
 
-#import "CJWAesEncrypt.h"
+#import "CJWCrypt.h"
+
+#define PASSWORD @"ILOVEC+W"
 #import "RNEncryptor.h"
 #import "RNDecryptor.h"
 #import "AESCrypt.h"
 
-
-#define PASSWORD @"ILOVEC+W"
-#define EMPTY_STRING @"BLANK"
-
-
-#define Cencoding NSUTF8StringEncoding
-@implementation CJWAesEncrypt
+@implementation CJWCrypt
 
 +(NSData *)aesEncrypt:(NSString *)plainText key:(NSString *)key{
     NSData *data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
@@ -36,9 +32,9 @@
                                         withPassword:key
                                                error:&error];
     if (error != nil) {
-        return EMPTY_STRING;
+        return @"";
     }
-    NSLog(@"data aesDecrypt");
+    NSLog(@"here");
     NSString *decrypted = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
     return decrypted;
 }
@@ -52,11 +48,11 @@
 @implementation NSString (CJWAesEncrypt)
 
 -(NSData *)aesEncrypt{
-    return [CJWAesEncrypt aesEncrypt:self];
+    return [CJWCrypt aesEncrypt:self];
 }
 
 -(NSData *)aesEncryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt aesEncrypt:self key:key];
+    return [CJWCrypt aesEncrypt:self key:key];
 }
 
 -(NSString *)aesEncryptToString{
@@ -82,11 +78,11 @@
 
 -(NSString *)aesDecrypt{
     NSLog(@"data de");
-    return [CJWAesEncrypt aesDecrypt:self];
+    return [CJWCrypt aesDecrypt:self];
 }
 
 -(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt aesDecrypt:self key:key];
+    return [CJWCrypt aesDecrypt:self key:key];
 }
 
 @end

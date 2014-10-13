@@ -22,6 +22,7 @@
 		B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE219EA5F520075B8A0 /* NSData+CommonCrypto.m */; };
 		B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */; };
 		B63B8FEC19EA5F520075B8A0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE519EA5F520075B8A0 /* README.md */; };
+		B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B68BA24219EB773000F1BF6A /* CJWCrypt.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
@@ -99,6 +100,8 @@
 		B63B8FE319EA5F520075B8A0 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		B63B8FE519EA5F520075B8A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B68BA24119EB773000F1BF6A /* CJWCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCrypt.h; sourceTree = "<group>"; };
+		B68BA24219EB773000F1BF6A /* CJWCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCrypt.m; sourceTree = "<group>"; };
 		B6A0B1C319E9201000D44554 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
@@ -389,6 +392,8 @@
 				B6BB71AD19E678000001088F /* CJWDesEncrypt.m */,
 				B63B8FB519EA4F630075B8A0 /* CJWAesEncrypt.h */,
 				B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */,
+				B68BA24119EB773000F1BF6A /* CJWCrypt.h */,
+				B68BA24219EB773000F1BF6A /* CJWCrypt.m */,
 			);
 			path = encrypt;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				B6BB71A619E6774A0001088F /* rscode.c in Sources */,
 				B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */,
 				B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */,
+				B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,
 				B6BB71A519E6774A0001088F /* qrspec.c in Sources */,

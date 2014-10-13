@@ -9,7 +9,7 @@
 #import "CJWUserManager.h"
 #import "CJWDesEncrypt.h"
 #import "CJWCacheUtils.h"
-#import "CJWAesEncrypt.h"
+#import "CJWCrypt.h"
 
 #define EMPTY_STRING  @"";
 

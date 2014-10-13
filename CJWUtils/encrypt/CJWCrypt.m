@@ -15,18 +15,18 @@
 
 @implementation CJWCrypt
 
-+(NSData *)aesEncrypt:(NSString *)plainText key:(NSString *)key{
++(NSData *)encryptWithAES:(NSString *)plainText key:(NSString *)key{
     NSData *data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
     NSError *error;
     NSData *encryptedData = [RNEncryptor encryptData:data withSettings:kRNCryptorAES256Settings password:key error:&error];
     return encryptedData;
 }
 
-+(NSData *)aesEncrypt:(NSString *)plainText{
-    return [CJWCrypt aesEncrypt:plainText key:PASSWORD];
++(NSData *)encryptWithAES:(NSString *)plainText{
+    return [self encryptWithAES:plainText key:PASSWORD];
 }
 
-+(NSString *)aesDecrypt:(NSData *)encryptedData key:(NSString *)key{
++(NSString *)decryptWithAES:(NSData *)encryptedData key:(NSString *)key{
     NSError *error;
     NSData *decryptedData = [RNDecryptor decryptData:encryptedData
                                         withPassword:key
@@ -39,50 +39,74 @@
     return decrypted;
 }
 
-+(NSString *)aesDecrypt:(NSData *)encryptedData{
-    return [CJWCrypt aesDecrypt:encryptedData key:PASSWORD];
++(NSString *)decryptWithAES:(NSData *)encryptedData{
+    return [self decryptWithAES:encryptedData key:PASSWORD];
+}
+
++(NSString *)encryptToAESString:(NSString *)string{
+    return [AESCrypt encrypt:string password:PASSWORD];
+}
+
++(NSString *)encryptToAESString:(NSString *)string withKey:(NSString *)key{
+    return [AESCrypt encrypt:string password:key];
+}
+
++(NSString *)decryptAESString:(NSString *)string{
+    return [AESCrypt decrypt:string password:PASSWORD];
+}
+
++(NSString *)decryptAESString:(NSString *)string withKey:(NSString *)key{
+    return [AESCrypt decrypt:string password:key];
 }
 
 @end
 
 @implementation NSString (CJWAesEncrypt)
 
--(NSData *)aesEncrypt{
-    return [CJWCrypt aesEncrypt:self];
+-(NSData *)encryptWithAES{
+    return [CJWCrypt encryptWithAES:self];
 }
 
--(NSData *)aesEncryptWithKey:(NSString *)key{
-    return [CJWCrypt aesEncrypt:self key:key];
+-(NSData *)encryptWithAES:(NSString *)key{
+    return [CJWCrypt encryptWithAES:self key:key];
 }
 
--(NSString *)aesEncryptToString{
-    return [AESCrypt encrypt:self password:PASSWORD];
+-(NSString *)decryptWithAES{
+    return [CJWCrypt decryptAESString:self];
 }
 
--(NSString *)aesEncryptToStringWithKey:(NSString *)key{
-    return [AESCrypt encrypt:self password:key];
+-(NSString *)decryptWithAES:(NSString *)key{
+    return [CJWCrypt decryptAESString:self withKey:key];
 }
 
--(NSString *)aesDecrypt{
-    NSLog(@"str de");
-    return [AESCrypt decrypt:self password:PASSWORD];
+-(NSString *)encryptToAESString{
+    return [CJWCrypt encryptToAESString:self];
 }
 
--(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [AESCrypt decrypt:self password:key];
+-(NSString *)encryptToAESStringWithKey:(NSString *)key{
+    return [CJWCrypt encryptToAESString:self withKey:key];
+}
+
+-(NSString *)decryptAESString{
+    return [CJWCrypt decryptAESString:self];
+}
+
+-(NSString *)decryptAESStringWithKey:(NSString *)key{
+    return [CJWCrypt decryptAESString:self withKey:key];
 }
 
 @end
 
 @implementation NSData (CJWAesEncrypt)
 
--(NSString *)aesDecrypt{
-    NSLog(@"data de");
-    return [CJWCrypt aesDecrypt:self];
+
+-(NSString *)decryptWithAES{
+    return [CJWCrypt decryptWithAES:self];
 }
 
--(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [CJWCrypt aesDecrypt:self key:key];
+-(NSString *)decryptWithAES:(NSString *)key{
+    return [CJWCrypt decryptWithAES:self key:key];
 }
 
 @end
+

@@ -11,31 +11,41 @@
 @interface CJWCrypt : NSObject
 
 
-+ (NSData *)aesEncrypt:(NSString *)plainText;
-+ (NSString *)aesDecrypt:(NSData *)encryptedData;
++ (NSData *)encryptWithAES:(NSString *)plainText;
++ (NSString *)decryptWithAES:(NSData *)encryptedData;
 
-+ (NSData *)aesEncrypt:(NSString *)plainText key:(NSString *)key;
-+ (NSString *)aesDecrypt:(NSData *)encryptedData  key:(NSString *)key;
++ (NSData *)encryptWithAES:(NSString *)plainText key:(NSString *)key;
++ (NSString *)decryptWithAES:(NSData *)encryptedData  key:(NSString *)key;
+
+
++(NSString *)encryptToAESString:(NSString *)string;
++(NSString *)encryptToAESString:(NSString *)string withKey:(NSString *)key;
+
++(NSString *)decryptAESString:(NSString *)string;
++(NSString *)decryptAESString:(NSString *)string withKey:(NSString *)key;
 
 @end
 
 
 @interface NSString (CJWAesEncrypt)
 
--(NSData *)aesEncrypt;
--(NSData *)aesEncryptWithKey:(NSString *)key;
+-(NSData *)encryptWithAES;
+-(NSData *)encryptWithAES:(NSString *)key;
 
--(NSString *)aesEncryptToString;
--(NSString *)aesEncryptToStringWithKey:(NSString *)key;
+-(NSString *)decryptWithAES;
+-(NSString *)decryptWithAES:(NSString *)key;
 
--(NSString *)aesDecrypt;
--(NSString *)aesDecryptWithKey:(NSString *)key;
+-(NSString *)encryptToAESString;
+-(NSString *)encryptToAESStringWithKey:(NSString *)key;
+
+-(NSString *)decryptAESString;
+-(NSString *)decryptAESStringWithKey:(NSString *)key;
 
 @end
 
 @interface NSData (CJWAesEncrypt)
 
--(NSString *)aesDecrypt;
--(NSString *)aesDecryptWithKey:(NSString *)key;
+-(NSString *)decryptWithAES;
+-(NSString *)decryptWithAES:(NSString *)key;
 
 @end

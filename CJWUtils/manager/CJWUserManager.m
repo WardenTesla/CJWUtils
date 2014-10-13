@@ -25,14 +25,14 @@
 @implementation CJWUserManager
 
 -(NSString *)getSaveKey:(NSString *)key{
-    NSString *saveKey = [[NSString stringWithFormat:@"%@%@",userAccount,key] aesEncryptToString];
+    NSString *saveKey = [[NSString stringWithFormat:@"%@%@",userAccount,key] encryptToAESString];
     return saveKey;
 }
 
 -(void)saveDefault:(NSString *)object forKey:(NSString *)key{
     NSString *saveKey = [self getSaveKey:key];
 //    NSLog(@"\n%@\n%@",saveKey,[object aesEncrypt]);
-    id enc = [object aesEncrypt];
+    id enc = [object encryptWithAES];
     NSLog(@"%@",enc);
     [userDefault setObject:enc forKey:saveKey];
 }
@@ -44,15 +44,15 @@
         if ([object isKindOfClass:[NSData class]]) {
             NSLog(@"data");
             NSData *dataData = object;
-            return [dataData aesDecrypt];
+            return [dataData decryptWithAES];
         }
         if ([object isKindOfClass:[NSString class]]) {
             NSLog(@"str");
             NSString *strData = object;
-            return [strData aesDecrypt];
+            return [strData decryptWithAES];
         }
         NSLog(@"nothing");
-        return [object aesDecrypt];
+        return [object decryptWithAES];
     }else{
         return EMPTY_STRING;
     }

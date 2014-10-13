@@ -8,13 +8,15 @@
 
 #import "CJWCrypt.h"
 
-#define PASSWORD @"ILOVEC+W"
 #define EMPTY_STRING @"blank"
 
 
 #import "RNEncryptor.h"
 #import "RNDecryptor.h"
 #import "AESCrypt.h"
+#import "OpenUDID.h"
+
+#define PASSWORD [OpenUDID value]
 
 @implementation CJWCrypt
 

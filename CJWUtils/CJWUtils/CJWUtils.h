@@ -24,5 +24,6 @@
 #import "UIColor+FlatUI.h"
 #import "CJWUserManager.h"
 #import "CJWCrypt.h"
+#import "OpenUDID.h"
 
 #endif

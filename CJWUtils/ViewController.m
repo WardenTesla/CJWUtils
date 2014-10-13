@@ -20,7 +20,7 @@
     [super viewDidLoad];
 
     CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
-    [user saveDefault:@"abc" forKey:@"def"];
+//    [user saveDefault:@"abc" forKey:@"def"];
     
     NSLog(@"%@",[user getDefaultByKey:@"def"]);
 }

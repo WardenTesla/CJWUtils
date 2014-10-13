@@ -117,6 +117,12 @@ Pod::Spec.new do |s|
   s.subspec 'Manager' do |ss|
     ss.source_files = 'CJWUtils/manager/*'
   end
+  
+  s.subspec 'UDID' do |ss|
+    ss.source_files = 'CJWUtils/libs/OpenUDID-master/**/*'
+    ss.requires_arc = false
+  end
+
 
   # s.public_header_files = "Classes/**/*.h"
 

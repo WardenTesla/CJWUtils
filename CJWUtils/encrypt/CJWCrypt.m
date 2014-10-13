@@ -9,6 +9,9 @@
 #import "CJWCrypt.h"
 
 #define PASSWORD @"ILOVEC+W"
+#define EMPTY_STRING @"blank"
+
+
 #import "RNEncryptor.h"
 #import "RNDecryptor.h"
 #import "AESCrypt.h"
@@ -32,9 +35,8 @@
                                         withPassword:key
                                                error:&error];
     if (decryptedData == nil) {
-        return @"blank";
+        return EMPTY_STRING;
     }
-    NSLog(@"here");
     NSString *decrypted = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];
     return decrypted;
 }

@@ -32,9 +32,8 @@
 -(void)saveDefault:(NSString *)object forKey:(NSString *)key{
     NSString *saveKey = [self getSaveKey:key];
 //    NSLog(@"\n%@\n%@",saveKey,[object aesEncrypt]);
-    id enc = [object encryptWithAES];
-    NSLog(@"%@",enc);
-    [userDefault setObject:enc forKey:saveKey];
+    id encrypt = [object encryptWithAES];
+    [userDefault setObject:encrypt forKey:saveKey];
 }
 
 -(NSString *)getDefaultByKey:(NSString *)key{
@@ -42,12 +41,10 @@
     id object = [userDefault objectForKey:saveKey];
     if (object != nil) {
         if ([object isKindOfClass:[NSData class]]) {
-            NSLog(@"data");
             NSData *dataData = object;
             return [dataData decryptWithAES];
         }
         if ([object isKindOfClass:[NSString class]]) {
-            NSLog(@"str");
             NSString *strData = object;
             return [strData decryptWithAES];
         }
@@ -82,20 +79,19 @@
 //}
 
 -(NSString *)phoneNumber{
-    NSString *phoneNumber = [self getDefaultByKey:@"phone"];
-    return phoneNumber;
+    return [self getDefaultByKey:@"phone"];
 }
 
 -(void)setPhoneNumber:(NSString *)phoneNumber{
     [self saveDefault:phoneNumber forKey:@"phone"];
 }
 
--(void)setNickName:(NSString *)nickName{
-    [self saveDefault:nickName forKey:@"nickName"];
-}
-
 -(NSString *)nickName{
     return [self getDefaultByKey:@"nickName"];
+}
+
+-(void)setNickName:(NSString *)nickName{
+    [self saveDefault:nickName forKey:@"nickName"];
 }
 
 -(NSString *)password{

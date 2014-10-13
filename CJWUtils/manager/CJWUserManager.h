@@ -14,9 +14,15 @@
 @property (nonatomic,weak) NSString *phoneNumber;
 @property (nonatomic,weak) NSString *nickName;
 @property (nonatomic,weak) NSString *password;
+@property (nonatomic,weak) NSString *myAccount;
 
++(CJWUserManager *)manager;
 
 -(NSString *)getDefaultByKey:(NSString *)key;
 -(void)saveDefault:(NSString *)object forKey:(NSString *)key;
+
++(void)cleanUserInfomation;
+-(void)logout;
+-(void)login:(NSString *)account;
 
 @end

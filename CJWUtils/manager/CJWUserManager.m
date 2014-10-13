@@ -12,6 +12,12 @@
 #import "CJWCrypt.h"
 
 #define EMPTY_STRING  @"blank";
+#define ACCOUNT_KEY [@"account" encryptToAESString]
+#define PASSWORD_KEY [@"password" encryptToAESString]
+
+#define PHONE @"phone"
+#define NICK_NAME @"nickName"
+#define PASSWORD @"password"
 
 @interface CJWUserManager (){
     NSString *userAccount;
@@ -32,6 +38,7 @@
 -(void)saveDefault:(NSString *)object forKey:(NSString *)key{
     NSString *saveKey = [self getSaveKey:key];
 //    NSLog(@"\n%@\n%@",saveKey,[object aesEncrypt]);
+//    NSLog(@"save %@",saveKey);
     id encrypt = [object encryptWithAES];
     [userDefault setObject:encrypt forKey:saveKey];
 }
@@ -57,49 +64,80 @@
 
 -(instancetype)init{
     userDefault = [NSUserDefaults standardUserDefaults];
-    userAccount = [userDefault objectForKey:@"account"];
+    userAccount = [userDefault objectForKey:ACCOUNT_KEY];
     return self;
 }
 
 -(instancetype)initWithAccount:(NSString *)account{
+//    NSLog(@"%@",ACCOUNT_KEY);
     userDefault = [NSUserDefaults standardUserDefaults];
-    userAccount = account.encrypt;
-    [userDefault setObject:userAccount forKey:@"account"];
+    [self login:account];
     return self;
 }
 
-//+(CJWUserManager *)manager{
-//    static dispatch_once_t pred = 0;
-//    static CJWUserManager *manager = nil;
-//    dispatch_once(&pred,
-//                  ^{
-//                      manager = [[CJWUserManager alloc] init];
-//                  });
-//    return manager;
-//}
+
+
++(CJWUserManager *)manager{
+    static dispatch_once_t pred = 0;
+    static CJWUserManager *manager = nil;
+    dispatch_once(&pred,
+                  ^{
+                      manager = [[CJWUserManager alloc] init];
+                  });
+    return manager;
+}
 
 -(NSString *)phoneNumber{
-    return [self getDefaultByKey:@"phone"];
+    return [self getDefaultByKey:PHONE];
 }
 
 -(void)setPhoneNumber:(NSString *)phoneNumber{
-    [self saveDefault:phoneNumber forKey:@"phone"];
+    [self saveDefault:phoneNumber forKey:PHONE];
 }
 
 -(NSString *)nickName{
-    return [self getDefaultByKey:@"nickName"];
+    return [self getDefaultByKey:NICK_NAME];
 }
 
 -(void)setNickName:(NSString *)nickName{
-    [self saveDefault:nickName forKey:@"nickName"];
+    [self saveDefault:nickName forKey:NICK_NAME];
 }
 
 -(NSString *)password{
-    return [self getDefaultByKey:@"password"];
+    return [self getDefaultByKey:PASSWORD];
 }
 
 -(void)setPassword:(NSString *)password{
-    [self saveDefault:password forKey:@"password"];
+    [self saveDefault:password forKey:PASSWORD];
+}
+
+-(NSString *)myAccount{
+    id account = [userAccount decryptAESString];
+    if (account == nil) {
+        return EMPTY_STRING;
+    }
+    return account;
+}
+
+-(void)setMyAccount:(NSString *)myAccount{
+    return;
+}
+
++(void)cleanUserInfomation{
+    NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+    [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+}
+
+-(void)logout{
+    [userDefault removeObjectForKey:[userAccount encryptToAESString]];
+    userAccount = EMPTY_STRING;
+    [CJWUserManager cleanUserInfomation];
+}
+
+-(void)login:(NSString *)account{
+    userAccount = [account encryptToAESString];
+    [userDefault setObject:userAccount forKey:ACCOUNT_KEY];
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }
 
 @end

@@ -19,10 +19,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
-    [user saveDefault:@"abc" forKey:@"def"];
-    //
-    NSLog(@"%@",[user getDefaultByKey:@"def"]);
+//    CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
+//    user.password = @"abcABC123";
+//    [user saveDefault:@"frankcjwen" forKey:@"def"];
+//    [user logout];
+//    [user login:@"frank2"];
+//    NSLog(@"%@",[user getDefaultByKey:@"def"]);
+//    [user setMyAccount:@"asd"];
+//    NSLog(@"%@",user.password);
+//    NSLog(@"%@",user.nickName);
+//    NSLog(@"%@",user.phoneNumber);
+//    NSLog(@"%@",user.myAccount);
+//    [[CJWUserManager manager] login:@"frank1"];
+    
+    [[CJWUserManager manager] login:@"frank"];
+
+    NSString *account = [CJWUserManager manager].myAccount;
+    NSLog(@"%@ %@",account,[CJWUserManager manager].password);
+    
+
+//    [CJWUserManager cleanUserInfomation];
 }
 
 - (void)didReceiveMemoryWarning {

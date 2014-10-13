@@ -137,7 +137,7 @@
 -(void)login:(NSString *)account{
     userAccount = [account encryptToAESString];
     [userDefault setObject:userAccount forKey:ACCOUNT_KEY];
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
+//    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
 }
 
 @end

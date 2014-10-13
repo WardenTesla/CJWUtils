@@ -18,22 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *phone = @"13631290232";
 
     CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
-//    [user setPhoneNumber:phone];
-//    [user setPhoneNumber:@"cao"];
-    user.nickName = @"123";
-//    NSString *ppp = user.phoneNumber;
-//    NSLog(@"phone [%@]",ppp);
-//    user.nickName = @"蠢蠢猪🐷";
+//    user.nickName = @"123";
+    user.nickName = @"caonimei";
     NSLog(@"{[[[%@",user.nickName);
-//    NSLog(@"\n%@",[AESCrypt encrypt:phone password:@"hello"]);
-//    NSLog(@"\n\n%@\n",[[phone aesEncrypt] aesDecrypt]);
-//    NSLog(@"\n\n%@\n",[[phone aesEncryptToString] aesDecrypt]);
-//    NSLog(@"\n\n%@",[[phone encrypt] decrypt]);
-    
-
 }
 
 - (void)didReceiveMemoryWarning {

@@ -32,7 +32,9 @@
 -(void)saveDefault:(NSString *)object forKey:(NSString *)key{
     NSString *saveKey = [self getSaveKey:key];
 //    NSLog(@"\n%@\n%@",saveKey,[object aesEncrypt]);
-    [userDefault setObject:[object aesEncrypt] forKey:saveKey];
+    id enc = [object aesEncrypt];
+    NSLog(@"%@",enc);
+    [userDefault setObject:enc forKey:saveKey];
 }
 
 -(NSString *)getDefaultByKey:(NSString *)key{

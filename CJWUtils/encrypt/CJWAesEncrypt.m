@@ -49,44 +49,4 @@
 
 @end
 
-@implementation NSString (CJWAesEncrypt)
 
--(NSData *)aesEncrypt{
-    return [CJWAesEncrypt aesEncrypt:self];
-}
-
--(NSData *)aesEncryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt aesEncrypt:self key:key];
-}
-
--(NSString *)aesEncryptToString{
-    return [AESCrypt encrypt:self password:PASSWORD];
-}
-
--(NSString *)aesEncryptToStringWithKey:(NSString *)key{
-    return [AESCrypt encrypt:self password:key];
-}
-
--(NSString *)aesDecrypt{
-    NSLog(@"str de");
-    return [AESCrypt decrypt:self password:PASSWORD];
-}
-
--(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [AESCrypt decrypt:self password:key];
-}
-
-@end
-
-@implementation NSData (CJWAesEncrypt)
-
--(NSString *)aesDecrypt{
-    NSLog(@"data de");
-    return [CJWAesEncrypt aesDecrypt:self];
-}
-
--(NSString *)aesDecryptWithKey:(NSString *)key{
-    return [CJWAesEncrypt aesDecrypt:self key:key];
-}
-
-@end

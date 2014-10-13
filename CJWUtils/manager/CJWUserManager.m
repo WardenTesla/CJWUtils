@@ -38,18 +38,20 @@
 }
 
 -(NSString *)getDefaultByKey:(NSString *)key{
-    NSLog(@"aaa");
     NSString *saveKey = [self getSaveKey:key];
-    NSLog(@"aaa");
     id object = [userDefault objectForKey:saveKey];
-    NSLog(@"aaa");
     if (object != nil) {
         if ([object isKindOfClass:[NSData class]]) {
             NSLog(@"data");
+            NSData *dataData = object;
+            return [dataData aesDecrypt];
         }
         if ([object isKindOfClass:[NSString class]]) {
             NSLog(@"str");
+            NSString *strData = object;
+            return [strData aesDecrypt];
         }
+        NSLog(@"nothing");
         return [object aesDecrypt];
     }else{
         return EMPTY_STRING;

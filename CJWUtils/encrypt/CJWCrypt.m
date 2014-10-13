@@ -32,7 +32,8 @@
                                         withPassword:key
                                                error:&error];
     if (error != nil) {
-        return @"";
+        NSLog(@"%@",error);
+        return @"blank";
     }
     NSLog(@"here");
     NSString *decrypted = [[NSString alloc] initWithData:decryptedData encoding:NSUTF8StringEncoding];

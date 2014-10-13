@@ -10,7 +10,6 @@
 		8535FD3BFB8249AA95D8689E /* libPods-CJWUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */; };
 		B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = B62935FE19E7829000EC9E44 /* CJWQRCode.m */; };
 		B629360519E7B24D00EC9E44 /* UITableView+CJWTabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = B629360419E7B24D00EC9E44 /* UITableView+CJWTabelView.m */; };
-		B63B8FB719EA4F630075B8A0 /* CJWAesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */; };
 		B63B8FC319EA50E60075B8A0 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FBC19EA50E60075B8A0 /* RNCryptor.m */; };
 		B63B8FC419EA50E60075B8A0 /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FBE19EA50E60075B8A0 /* RNCryptorEngine.m */; };
 		B63B8FC519EA50E60075B8A0 /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FC019EA50E60075B8A0 /* RNDecryptor.m */; };
@@ -77,8 +76,6 @@
 		B62935FE19E7829000EC9E44 /* CJWQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWQRCode.m; sourceTree = "<group>"; };
 		B629360319E7B24D00EC9E44 /* UITableView+CJWTabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CJWTabelView.h"; sourceTree = "<group>"; };
 		B629360419E7B24D00EC9E44 /* UITableView+CJWTabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CJWTabelView.m"; sourceTree = "<group>"; };
-		B63B8FB519EA4F630075B8A0 /* CJWAesEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWAesEncrypt.h; sourceTree = "<group>"; };
-		B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWAesEncrypt.m; sourceTree = "<group>"; };
 		B63B8FB919EA50E60075B8A0 /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
 		B63B8FBA19EA50E60075B8A0 /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
 		B63B8FBB19EA50E60075B8A0 /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
@@ -390,8 +387,6 @@
 				B6BB71AB19E678000001088F /* Base64Defines.h */,
 				B6BB71AC19E678000001088F /* CJWDesEncrypt.h */,
 				B6BB71AD19E678000001088F /* CJWDesEncrypt.m */,
-				B63B8FB519EA4F630075B8A0 /* CJWAesEncrypt.h */,
-				B63B8FB619EA4F630075B8A0 /* CJWAesEncrypt.m */,
 				B68BA24119EB773000F1BF6A /* CJWCrypt.h */,
 				B68BA24219EB773000F1BF6A /* CJWCrypt.m */,
 			);
@@ -599,7 +594,6 @@
 				B63B8FC319EA50E60075B8A0 /* RNCryptor.m in Sources */,
 				B6BB712419E659DE0001088F /* ViewController.m in Sources */,
 				B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */,
-				B63B8FB719EA4F630075B8A0 /* CJWAesEncrypt.m in Sources */,
 				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,
 				B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */,
 				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,

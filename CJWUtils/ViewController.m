@@ -34,7 +34,7 @@
     
     [[CJWUserManager manager] login:@"frank"];
 
-    NSString *account = [CJWUserManager manager].myAccount;
+//    NSString *account = [CJWUserManager manager].myAccount;
 //    NSLog(@"%@ %@",account,[CJWUserManager manager].password);
     
 

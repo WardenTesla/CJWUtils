@@ -119,7 +119,7 @@ Pod::Spec.new do |s|
   end
   
   s.subspec 'UDID' do |ss|
-    ss.source_files = 'CJWUtils/libs/OpenUDID-master/**/*'
+    ss.source_files = 'CJWUtils/libs/OpenUDID-master/*'
     ss.requires_arc = false
   end
 

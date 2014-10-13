@@ -31,8 +31,7 @@
     NSData *decryptedData = [RNDecryptor decryptData:encryptedData
                                         withPassword:key
                                                error:&error];
-    if (error != nil) {
-        NSLog(@"%@",error);
+    if (decryptedData == nil) {
         return @"blank";
     }
     NSLog(@"here");

@@ -23,7 +23,7 @@
 }
 
 +(NSData *)aesEncrypt:(NSString *)plainText{
-    return [self aesEncrypt:plainText key:PASSWORD];
+    return [CJWCrypt aesEncrypt:plainText key:PASSWORD];
 }
 
 +(NSString *)aesDecrypt:(NSData *)encryptedData key:(NSString *)key{
@@ -40,7 +40,7 @@
 }
 
 +(NSString *)aesDecrypt:(NSData *)encryptedData{
-    return [self aesDecrypt:encryptedData key:PASSWORD];
+    return [CJWCrypt aesDecrypt:encryptedData key:PASSWORD];
 }
 
 @end

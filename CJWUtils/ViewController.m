@@ -20,9 +20,8 @@
     [super viewDidLoad];
 
     CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
-//    user.nickName = @"123";
-    user.nickName = @"caonimei";
-    NSLog(@"{[[[%@",user.nickName);
+    [user saveDefault:@"abc" forKey:@"def"];
+    NSLog(@"%@",[user getDefaultByKey:@"def"]);
 }
 
 - (void)didReceiveMemoryWarning {

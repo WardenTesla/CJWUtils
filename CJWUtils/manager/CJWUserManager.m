@@ -11,7 +11,7 @@
 #import "CJWCacheUtils.h"
 #import "CJWCrypt.h"
 
-#define EMPTY_STRING  @"";
+#define EMPTY_STRING  @"blank";
 
 @interface CJWUserManager (){
     NSString *userAccount;
@@ -38,8 +38,11 @@
 }
 
 -(NSString *)getDefaultByKey:(NSString *)key{
+    NSLog(@"aaa");
     NSString *saveKey = [self getSaveKey:key];
+    NSLog(@"aaa");
     id object = [userDefault objectForKey:saveKey];
+    NSLog(@"aaa");
     if (object != nil) {
         if ([object isKindOfClass:[NSData class]]) {
             NSLog(@"data");

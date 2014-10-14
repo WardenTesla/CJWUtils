@@ -122,6 +122,11 @@ Pod::Spec.new do |s|
     ss.source_files = 'CJWUtils/libs/OpenUDID-master/*'
     ss.requires_arc = false
   end
+  
+  s.subspec 'UDID' do |ss|
+    ss.source_files = 'CJWUtils/libs/Reachability/*'
+    ss.framework  = "SystemConfiguration"
+  end
 
 
   # s.public_header_files = "Classes/**/*.h"

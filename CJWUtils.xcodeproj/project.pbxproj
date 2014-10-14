@@ -24,6 +24,7 @@
 		B64EDE6519EBA2A300B529B5 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6319EBA2A300B529B5 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B64EDE6619EBA2A300B529B5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6419EBA2A300B529B5 /* README.md */; };
 		B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B68BA24219EB773000F1BF6A /* CJWCrypt.m */; };
+		B694A11319ECF1A500874196 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B694A11219ECF1A500874196 /* Reachability.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
@@ -104,6 +105,8 @@
 		B64EDE6419EBA2A300B529B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B68BA24119EB773000F1BF6A /* CJWCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCrypt.h; sourceTree = "<group>"; };
 		B68BA24219EB773000F1BF6A /* CJWCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCrypt.m; sourceTree = "<group>"; };
+		B694A11119ECF1A500874196 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B694A11219ECF1A500874196 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		B6A0B1C319E9201000D44554 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
@@ -237,6 +240,7 @@
 		B64EDE6019EBA29400B529B5 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				B694A11019ECF1A500874196 /* Reachability */,
 				B64EDE6119EBA2A300B529B5 /* OpenUDID-master */,
 			);
 			path = libs;
@@ -250,6 +254,15 @@
 				B64EDE6419EBA2A300B529B5 /* README.md */,
 			);
 			path = "OpenUDID-master";
+			sourceTree = "<group>";
+		};
+		B694A11019ECF1A500874196 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B694A11119ECF1A500874196 /* Reachability.h */,
+				B694A11219ECF1A500874196 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		B6A0B1CD19E931D500D44554 /* manager */ = {
@@ -624,6 +637,7 @@
 				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,
 				B6BB718E19E676340001088F /* UIView+MJExtension.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
+				B694A11319ECF1A500874196 /* Reachability.m in Sources */,
 				B6BB71A319E6774A0001088F /* qrencode.c in Sources */,
 				B63B8FE919EA5F520075B8A0 /* NSData+Base64.m in Sources */,
 				B64EDE6619EBA2A300B529B5 /* README.md in Sources */,

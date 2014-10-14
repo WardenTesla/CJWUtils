@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CJWUtils.h"
 
-
+#import "AFNetworkReachabilityManager.h"
 @interface ViewController ()
 
 @end
@@ -19,26 +19,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-//    CJWUserManager *user = [[CJWUserManager alloc] initWithAccount:@"frank"];
-//    user.password = @"abcABC123";
-//    [user saveDefault:@"frankcjwen" forKey:@"def"];
-//    [user logout];
-//    [user login:@"frank2"];
-//    NSLog(@"%@",[user getDefaultByKey:@"def"]);
-//    [user setMyAccount:@"asd"];
-//    NSLog(@"%@",user.password);
-//    NSLog(@"%@",user.nickName);
-//    NSLog(@"%@",user.phoneNumber);
-//    NSLog(@"%@",user.myAccount);
-//    [[CJWUserManager manager] login:@"frank1"];
+//    NSURLCache *cache = [NSURLCache sharedURLCache];
+//    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0f];
+//
+//    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:0 diskCapacity:50 * 1024 * 1024 diskPath:nil];
+//    [NSURLCache setSharedURLCache:URLCache];
     
-    [[CJWUserManager manager] login:@"frank"];
-
-//    NSString *account = [CJWUserManager manager].myAccount;
-//    NSLog(@"%@ %@",account,[CJWUserManager manager].password);
     
-
+    
+    
+   
+    NSLog(@"hello");
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"Reachability: %@", AFStringFromNetworkReachabilityStatus(status));
+    }];
+    
 //    [CJWUserManager cleanUserInfomation];
+    
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(req)]];
+}
+
+-(void)req{
+    AFNetworkReachabilityStatus status = [AFNetworkReachabilityManager sharedManager].networkReachabilityStatus;
+    NSLog(@"status: %@", AFStringFromNetworkReachabilityStatus(status));
+
+//    NSLog(@"%@".)
+    [[CJWHttpUtils manager] requestUrl:@"http://115.29.141.172/CDesign/shop" param:nil shouldCache:true success:^(id response) {
+        NSLog(@"suc");
+    } fail:^{
+        //
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -171,9 +171,9 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "AFNetworking"
   s.dependency "SDWebImage"
-  s.dependency "EDStarRating"
+  #s.dependency "EDStarRating"
   s.dependency "MBProgressHUD"
-  s.dependency "CGFloatType"
+  #s.dependency "CGFloatType"
   s.dependency "TMCache"
 
 end

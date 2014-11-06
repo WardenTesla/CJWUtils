@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@cc",IS_IOS8?@"yes":@"no");
+    NSLog(@"%@cc",[CJWVersion isiOS8]?@"yes":@"no");
 //    NSURLCache *cache = [NSURLCache sharedURLCache];
 //    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0f];
 //

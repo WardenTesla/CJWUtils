@@ -10,6 +10,11 @@
 
 @implementation CJWVersion
 
+
+
++(BOOL)isiOS8{
+    return [[[UIDevice currentDevice] systemVersion] floatValue] >= 8;
+}
 -(void)asfdasd{
 //    [[[UIDevice currentDevice] systemVersion] floatValue] >=8
 }

@@ -27,6 +27,7 @@
 		B694A11319ECF1A500874196 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B694A11219ECF1A500874196 /* Reachability.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
+		B6B5A9FF1A0B0B48005A96E1 /* CJWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
 		B6BB712119E659DE0001088F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712019E659DE0001088F /* AppDelegate.m */; };
 		B6BB712419E659DE0001088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712319E659DE0001088F /* ViewController.m */; };
@@ -111,6 +112,8 @@
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
 		B6A0B1CF19E931E800D44554 /* CJWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUserManager.m; sourceTree = "<group>"; };
+		B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWVersion.h; sourceTree = "<group>"; };
+		B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWVersion.m; sourceTree = "<group>"; };
 		B6BB711819E659DE0001088F /* CJWUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJWUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB711C19E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB711D19E659DE0001088F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -362,6 +365,8 @@
 				B6BB715419E66F8E0001088F /* NSString+Validate.m */,
 				B6BB714219E65E260001088F /* SDNetworkActivityIndicator.h */,
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
+				B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */,
+				B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -624,6 +629,7 @@
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
 				B63B8FEC19EA5F520075B8A0 /* README.md in Sources */,
 				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,
+				B6B5A9FF1A0B0B48005A96E1 /* CJWVersion.m in Sources */,
 				B6BB718C19E676340001088F /* UIScrollView+MJExtension.m in Sources */,
 				B63B8FC419EA50E60075B8A0 /* RNCryptorEngine.m in Sources */,
 				B62935FF19E7829000EC9E44 /* CJWQRCode.m in Sources */,

@@ -10,6 +10,9 @@
 #import "CJWUtils.h"
 
 #import "AFNetworkReachabilityManager.h"
+
+#import "CJWVersion.h"
+
 @interface ViewController ()
 
 @end
@@ -18,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"%@cc",IS_IOS8?@"yes":@"no");
 //    NSURLCache *cache = [NSURLCache sharedURLCache];
 //    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0f];
 //

@@ -25,5 +25,6 @@
 #import "CJWUserManager.h"
 #import "CJWCrypt.h"
 #import "OpenUDID.h"
+#import "CJWVersion.h"
 
 #endif

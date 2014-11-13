@@ -55,4 +55,8 @@
     [[TMCache sharedCache] removeAllObjects];
 }
 
++(id)getCacheBy:(NSString *)key{
+    return [[TMCache sharedCache] objectForKey:key];
+}
+
 @end

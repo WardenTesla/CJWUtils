@@ -14,4 +14,6 @@
 +(void)getCache:(NSString *)cacheKey block:(void (^)(id object))block;
 +(NSString *)generateCacheKey:(NSString *)url param:(NSDictionary *)param;
 +(void)clearCache;
+
++(id)getCacheBy:(NSString *)key;
 @end

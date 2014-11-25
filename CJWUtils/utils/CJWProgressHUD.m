@@ -37,6 +37,7 @@
     hud.animationType = MBProgressHUDAnimationFade;
     return hud;
 }
+\
 @end
 
 //UIView + CJWProgressHUD
@@ -57,6 +58,14 @@
 
 -(void)hideAllHUD{
     [CJWProgressHUD hideAllHUDsForView:self animated:YES];
+}
+
+-(void)showLoading{
+    CJWProgressHUD *hud = [CJWProgressHUD showHUDAddedTo:self animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"pls wait";
+    hud.animationType = MBProgressHUDAnimationFade;
+
 }
 
 @end

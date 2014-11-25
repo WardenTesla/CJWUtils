@@ -41,6 +41,7 @@
 //    [CJWUserManager cleanUserInfomation];
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(req)]];
+    [self.view showLoading];
 }
 
 -(void)req{

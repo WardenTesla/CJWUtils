@@ -14,4 +14,10 @@
     self.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
+
+-(void)scrollToTopWith:(BOOL)animate{
+    NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionTop animated:animate];
+}
+
 @end

@@ -24,5 +24,6 @@
 -(void)hideHUD;
 -(void)showTemporary:(NSString *)text;
 -(void)hideAllHUD;
+-(void)showLoading;
 
 @end

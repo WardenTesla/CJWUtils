@@ -11,5 +11,6 @@
 @interface UITableView (CJWTabelView)
 
 -(void)clearExtraLines;
+-(void)scrollToTop:(BOOL)animate;
 
 @end

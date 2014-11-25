@@ -15,7 +15,7 @@
 }
 
 
--(void)scrollToTopWith:(BOOL)animate{
+-(void)scrollToTop:(BOOL)animate{
     NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:0];
     [self scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionTop animated:animate];
 }

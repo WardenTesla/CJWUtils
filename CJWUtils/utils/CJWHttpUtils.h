@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void (^CJWSuccessBlock)(id response);
 typedef void (^CJWFailBlock)();
@@ -23,5 +24,11 @@ typedef void (^CJWFailBlock)();
 @interface CJWHttpUtils (httpWithCache)
 
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param shouldCache:(BOOL)flag success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail;
+
+-(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
+        image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure uploadWith:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block;
+
+-(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
+        image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure;
 
 @end

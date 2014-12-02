@@ -122,7 +122,16 @@
         failure(nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
 //        DDLogDebug(@"upload exception\n%@",error);
-        failure(error);
+//        NSLog(@"status code %ld",operation.response.statusCode);
+//        NSLog(@"error code %ld",error.code);
+        NSInteger statusCode = operation.response.statusCode;
+        if (statusCode == 200) {
+            success(operation.responseString);
+            return;
+            //NSLog(@"%@",operation.responseString);
+        }else{
+            failure(error);
+        }
     }];
     
     [operation setUploadProgressBlock:block];

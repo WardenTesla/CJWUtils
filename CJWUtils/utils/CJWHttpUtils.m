@@ -98,12 +98,12 @@
 
 
 -(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
-        image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure{
-    [self upload:URLString parameters:parameters image:uploadImage success:success failure:failure uploadWith:nil];
+        image:(UIImage *)uploadImage paramName:(NSString *)paramName imageName:(NSString *)name success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure{
+    [self upload:URLString parameters:parameters image:uploadImage paramName:paramName imageName:name success:success failure:failure uploadWith:nil];
 }
 
 -(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
-                            image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure uploadWith:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block{
+        image:(UIImage *)uploadImage paramName:(NSString *)paramName imageName:(NSString *)name success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure uploadWith:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block{
     AFHTTPRequestOperationManager *manager  = [AFHTTPRequestOperationManager manager];
     AFHTTPRequestOperation *operation = [manager POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         NSData *dataObj = UIImageJPEGRepresentation(uploadImage, 1.0);

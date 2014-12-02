@@ -96,6 +96,39 @@
     }];
 }
 
+
+-(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
+        image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure{
+    [self upload:URLString parameters:parameters image:uploadImage success:success failure:failure uploadWith:nil];
+}
+
+-(void)upload:(NSString *)URLString parameters:(NSDictionary *)parameters
+                            image:(UIImage *)uploadImage success:(void (^)(id resp))success failure:(void (^)(NSError *error))failure uploadWith:(void (^)(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite))block{
+    AFHTTPRequestOperationManager *manager  = [AFHTTPRequestOperationManager manager];
+    AFHTTPRequestOperation *operation = [manager POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        NSData *dataObj = UIImageJPEGRepresentation(uploadImage, 1.0);
+        [formData appendPartWithFileData:dataObj name:@"image" fileName:@"ios.png" mimeType:@"image/jpeg"];
+    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //        DDLogDebug(@"resp\n%@",responseObject);
+        if ([responseObject isKindOfClass:[NSString class]]) {
+            if ([responseObject length]<50) {
+                success(responseObject);
+            }else{
+            }
+        }else{
+//            DDLogError(@"upload response exception");
+        }
+        //        success(operation,responseObject);
+        failure(nil);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        DDLogDebug(@"upload exception\n%@",error);
+        failure(error);
+    }];
+    
+    [operation setUploadProgressBlock:block];
+//    return operation;
+}
+
 -(void)hello{
     
     BOOL flag;

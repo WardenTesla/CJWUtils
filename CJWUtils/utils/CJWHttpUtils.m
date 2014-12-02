@@ -107,7 +107,7 @@
     AFHTTPRequestOperationManager *manager  = [AFHTTPRequestOperationManager manager];
     AFHTTPRequestOperation *operation = [manager POST:URLString parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         NSData *dataObj = UIImageJPEGRepresentation(uploadImage, 1.0);
-        [formData appendPartWithFileData:dataObj name:@"image" fileName:@"ios.png" mimeType:@"image/jpeg"];
+        [formData appendPartWithFileData:dataObj name:paramName fileName:name mimeType:@"image/jpeg"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {
         //        DDLogDebug(@"resp\n%@",responseObject);
         if ([responseObject isKindOfClass:[NSString class]]) {

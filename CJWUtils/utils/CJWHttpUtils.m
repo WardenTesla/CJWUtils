@@ -38,14 +38,15 @@
          error code -1016
          
          */
-        NSLog(@"status code %ld",operation.response.statusCode);
-        NSLog(@"error code %ld",error.code);
+        
         NSInteger statusCode = operation.response.statusCode;
         if (statusCode == 200) {
             success(operation.responseString);
             return;
             //            NSLog(@"%@",operation.responseString);
         }else{
+            NSLog(@"status code %ld",operation.response.statusCode);
+            NSLog(@"error code %ld",error.code);
         }
         NSLog(@"%@",error);
         fail();

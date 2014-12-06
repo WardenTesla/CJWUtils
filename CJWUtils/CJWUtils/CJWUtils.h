@@ -27,5 +27,6 @@
 #import "OpenUDID.h"
 #import "CJWVersion.h"
 #import "NSString+CJWString.h"
+#import "UIImageView+CJWImage.h"
 
 #endif

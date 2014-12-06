@@ -30,7 +30,6 @@
     
     
     
-    
    
     NSLog(@"hello");
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];

@@ -10,6 +10,11 @@
 
 @interface UIImageView (CJWImage)
 
+
+@end
+
+@interface UIImage (CJWImage)
+
 +(UIImage*)compressImageDownToPhoneScreenSize:(UIImage*)theImage;
 
 @end

@@ -127,6 +127,11 @@ Pod::Spec.new do |s|
     ss.source_files = 'CJWUtils/libs/Reachability/*'
     ss.framework  = "SystemConfiguration"
   end
+  
+  s.subspec 'JSONKit' do |ss|
+    ss.source_files = 'CJWUtils/libs/JSONKit-master/*'
+    ss.requires_arc = false
+  end
 
 
   # s.public_header_files = "Classes/**/*.h"

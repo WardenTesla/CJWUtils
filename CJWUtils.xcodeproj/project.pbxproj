@@ -24,6 +24,7 @@
 		B64D42421A15FD8500ACDCA7 /* UILabel+CJWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D42411A15FD8500ACDCA7 /* UILabel+CJWLabel.m */; };
 		B64EDE6519EBA2A300B529B5 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6319EBA2A300B529B5 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B64EDE6619EBA2A300B529B5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6419EBA2A300B529B5 /* README.md */; };
+		B65943C91A331C7200C042EF /* NSString+CJWString.m in Sources */ = {isa = PBXBuildFile; fileRef = B65943C81A331C7200C042EF /* NSString+CJWString.m */; };
 		B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B68BA24219EB773000F1BF6A /* CJWCrypt.m */; };
 		B694A11319ECF1A500874196 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B694A11219ECF1A500874196 /* Reachability.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
@@ -108,6 +109,8 @@
 		B64EDE6219EBA2A300B529B5 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		B64EDE6319EBA2A300B529B5 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
 		B64EDE6419EBA2A300B529B5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B65943C71A331C7200C042EF /* NSString+CJWString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CJWString.h"; sourceTree = "<group>"; };
+		B65943C81A331C7200C042EF /* NSString+CJWString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CJWString.m"; sourceTree = "<group>"; };
 		B68BA24119EB773000F1BF6A /* CJWCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWCrypt.h; sourceTree = "<group>"; };
 		B68BA24219EB773000F1BF6A /* CJWCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCrypt.m; sourceTree = "<group>"; };
 		B694A11119ECF1A500874196 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -375,6 +378,8 @@
 				B6BB714319E65E260001088F /* SDNetworkActivityIndicator.m */,
 				B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */,
 				B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */,
+				B65943C71A331C7200C042EF /* NSString+CJWString.h */,
+				B65943C81A331C7200C042EF /* NSString+CJWString.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -625,6 +630,7 @@
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,
 				B6BB71A519E6774A0001088F /* qrspec.c in Sources */,
 				B6BB715819E66F8E0001088F /* CJWNetworkActivityIndicator.m in Sources */,
+				B65943C91A331C7200C042EF /* NSString+CJWString.m in Sources */,
 				B6BB718A19E676340001088F /* MJRefreshFooterView.m in Sources */,
 				B64EDE6519EBA2A300B529B5 /* OpenUDID.m in Sources */,
 				B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */,

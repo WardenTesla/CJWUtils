@@ -26,5 +26,6 @@
 #import "CJWCrypt.h"
 #import "OpenUDID.h"
 #import "CJWVersion.h"
+#import "NSString+CJWString.h"
 
 #endif

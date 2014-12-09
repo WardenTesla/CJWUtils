@@ -22,7 +22,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDate *date = [CJWDateUtils stringToDate:@"20141208 1834"];
+    NSDate *date = [CJWDateUtils stringToDate:@"20140909 1834"];
+    
+    [CJWDateUtils testing];
+//    [CJWDateUtils ]
     NSLog(@"%@cc {{%@}}",[CJWVersion isiOS8]?@"yes":@"no",date);
 //    NSURLCache *cache = [NSURLCache sharedURLCache];
 //    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0f];

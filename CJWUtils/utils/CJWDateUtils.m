@@ -8,12 +8,17 @@
 
 #import "CJWDateUtils.h"
 
+
+@interface CJWDateUtils(){
+//    NSDateComponents *components;
+}
+@end
+
 @implementation CJWDateUtils
 
 +(NSDate *)stringToDate:(NSString *)dateString{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyyMMdd HHmmss"];
-//    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     //20100804 1601
     NSString *str = [NSString stringWithFormat:@"%@00",dateString];
     NSDate *date = [dateFormatter dateFromString:str];
@@ -30,4 +35,77 @@
     return @"yyyyMMdd HHmm";
 }
 
++(void)today:(NSString *)hour minute:(NSString *)min{
+}
+
+
++(void)testing{
+    NSLog(@"%@ %@ %@ %@",[self thisYear],[self thisMonth],[self thisDay],[self tomorrowDate]);
+}
+
++(NSDateFormatter *)dateFormatter{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyyMMdd"];
+    return dateFormatter;
+}
+
+//+(NSDate *)tomorrowDate{
+//    NSTimeInterval secondsPerDay = 24*60*60;
+//    NSDate *tomorrow = [NSDate dateWithTimeIntervalSinceNow:secondsPerDay];
+//    return tomorrow;
+//}
+
 @end
+
+
+@implementation CJWDateUtils (dateMethod)
+
++(NSString *)tomorrowDate{
+    NSTimeInterval secondsPerDay = 24*60*60;
+    NSDate *tomorrow = [NSDate dateWithTimeIntervalSinceNow:secondsPerDay];
+    NSDateFormatter *formatter = [self dateFormatter];
+    NSString *date = [formatter stringFromDate:tomorrow];
+    return date;
+}
+
++(NSDateComponents *)components{
+    NSDate *date = [[NSDate alloc] init];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitMonth|NSCalendarUnitYear|NSCalendarUnitDay|NSCalendarUnitDay|NSCalendarUnitWeekday|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitCalendar fromDate:date];
+    return components;
+}
+
++(NSString *)thisYear{
+    NSString *year = [NSString stringWithFormat:@"%ld",[[self components] year]];
+    return year;
+}
+
++(NSString *)thisMonth{
+    NSDateComponents *comp = [self components];
+    NSString *month = [NSString stringWithFormat:@"%ld",[comp month]];
+    return month;
+}
+
++(NSString *)thisDate{
+    NSDateFormatter *formatter = [self dateFormatter];
+    NSString *date = [formatter stringFromDate:[[NSDate alloc] init]];
+    return date;
+}
+
++(NSString *)thisDay{
+    NSDateComponents *comp = [self components];
+    NSString *day = [NSString stringWithFormat:@"%ld",[comp day]];
+    return day;
+}
+
++(NSString *)thisTime{
+    NSDateComponents *comp = [self components];
+    NSString *time = [NSString stringWithFormat:@"%ld%ld",[comp hour],[comp minute]];
+    return time;
+}
+
+@end
+
+
+
+

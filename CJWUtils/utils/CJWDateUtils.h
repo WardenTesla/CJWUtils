@@ -12,4 +12,24 @@
 
 +(NSDate *)stringToDate:(NSString *)dateString;
 +(NSString *)sampleInput;
++(void)testing;
+@end
+
+
+@interface CJWDateUtils(dateMethod)
+
++(NSDateComponents *)components;
+
++(NSString *)thisYear;
+
++(NSString *)thisMonth;
+
++(NSString *)thisDate;
+
++(NSString *)thisDay;
+
++(NSString *)thisTime;
+
++(NSString *)tomorrowDate;
+
 @end

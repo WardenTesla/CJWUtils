@@ -12,6 +12,7 @@
 #import "AFNetworkReachabilityManager.h"
 
 #import "CJWVersion.h"
+#import "CJWDateUtils.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@cc",[CJWVersion isiOS8]?@"yes":@"no");
+    NSDate *date = [CJWDateUtils stringToDate:@"20141208 1834"];
+    NSLog(@"%@cc %@",[CJWVersion isiOS8]?@"yes":@"no",date);
 //    NSURLCache *cache = [NSURLCache sharedURLCache];
 //    NSURLRequest *urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:@""] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30.0f];
 //

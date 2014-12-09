@@ -66,6 +66,7 @@
 		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
 		B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */; };
 		B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1C7C119E8CCE9002E459D /* CJWEncode.m */; };
+		B6F95AEF1A36E0DC00C298DC /* CJWDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,8 @@
 		B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CJWImage.m"; sourceTree = "<group>"; };
 		B6F1C7C019E8CCE9002E459D /* CJWEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWEncode.h; sourceTree = "<group>"; };
 		B6F1C7C119E8CCE9002E459D /* CJWEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWEncode.m; sourceTree = "<group>"; };
+		B6F95AED1A36E0DC00C298DC /* CJWDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWDateUtils.h; sourceTree = "<group>"; };
+		B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWDateUtils.m; sourceTree = "<group>"; };
 		E4A58085B8D647319DB18614 /* libPods-CJWUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJWUtils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -393,6 +396,8 @@
 				B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */,
 				B65943C71A331C7200C042EF /* NSString+CJWString.h */,
 				B65943C81A331C7200C042EF /* NSString+CJWString.m */,
+				B6F95AED1A36E0DC00C298DC /* CJWDateUtils.h */,
+				B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -658,6 +663,7 @@
 				B629360519E7B24D00EC9E44 /* UITableView+CJWTabelView.m in Sources */,
 				B6BB71A419E6774A0001088F /* qrinput.c in Sources */,
 				B6BB71A119E6774A0001088F /* mask.c in Sources */,
+				B6F95AEF1A36E0DC00C298DC /* CJWDateUtils.m in Sources */,
 				B6BB715619E66F8E0001088F /* CJWCacheUtils.m in Sources */,
 				B63B8FEC19EA5F520075B8A0 /* README.md in Sources */,
 				B6BB718819E676340001088F /* MJRefreshBaseView.m in Sources */,

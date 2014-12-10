@@ -21,7 +21,7 @@
 //    }
     @try {
         [[TMCache sharedCache] setObject:cacheObject forKey:cacheKey];
-        NSLog(@"cached");
+//        NSLog(@"cached");
     }
     @catch (NSException *exception) {
         NSLog(@"cache type error");
@@ -49,6 +49,15 @@
         return cacheKey;
     }
     return url;
+}
+
++(BOOL)isExist:(NSString *)key{
+    id object = [self getCacheBy:key];
+    if (object == nil) {
+        return NO;
+    }else{
+        return YES;
+    }
 }
 
 +(void)clearCache{

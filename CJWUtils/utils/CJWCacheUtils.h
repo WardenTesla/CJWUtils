@@ -16,4 +16,7 @@
 +(void)clearCache;
 
 +(id)getCacheBy:(NSString *)key;
+
++(BOOL)isExist:(NSString *)key;
+
 @end

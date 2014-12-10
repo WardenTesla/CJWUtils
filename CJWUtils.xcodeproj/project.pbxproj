@@ -32,6 +32,7 @@
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
 		B6B5A9FF1A0B0B48005A96E1 /* CJWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */; };
 		B6B5AA021A0B1324005A96E1 /* AppInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5AA011A0B1324005A96E1 /* AppInfoManager.m */; };
+		B6B9953B1A37EE7600A10201 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B995381A37EE7600A10201 /* NSDate+Utilities.m */; };
 		B6BB711E19E659DE0001088F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB711D19E659DE0001088F /* main.m */; };
 		B6BB712119E659DE0001088F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712019E659DE0001088F /* AppDelegate.m */; };
 		B6BB712419E659DE0001088F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB712319E659DE0001088F /* ViewController.m */; };
@@ -127,6 +128,8 @@
 		B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWVersion.m; sourceTree = "<group>"; };
 		B6B5AA001A0B1324005A96E1 /* AppInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoManager.h; sourceTree = "<group>"; };
 		B6B5AA011A0B1324005A96E1 /* AppInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoManager.m; sourceTree = "<group>"; };
+		B6B995371A37EE7600A10201 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		B6B995381A37EE7600A10201 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		B6BB711819E659DE0001088F /* CJWUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJWUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6BB711C19E659DE0001088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6BB711D19E659DE0001088F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 		B64EDE6019EBA29400B529B5 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				B6B995351A37EE7600A10201 /* NSDate-Extensions-master */,
 				B631A2DC1A334048006F25FA /* JSONKit-master */,
 				B694A11019ECF1A500874196 /* Reachability */,
 				B64EDE6119EBA2A300B529B5 /* OpenUDID-master */,
@@ -300,6 +304,15 @@
 				B6A0B1CF19E931E800D44554 /* CJWUserManager.m */,
 			);
 			path = manager;
+			sourceTree = "<group>";
+		};
+		B6B995351A37EE7600A10201 /* NSDate-Extensions-master */ = {
+			isa = PBXGroup;
+			children = (
+				B6B995371A37EE7600A10201 /* NSDate+Utilities.h */,
+				B6B995381A37EE7600A10201 /* NSDate+Utilities.m */,
+			);
+			path = "NSDate-Extensions-master";
 			sourceTree = "<group>";
 		};
 		B6BB710F19E659DE0001088F = {
@@ -644,6 +657,7 @@
 				B631A2E21A334048006F25FA /* JSONKit.m in Sources */,
 				B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */,
 				B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */,
+				B6B9953B1A37EE7600A10201 /* NSDate+Utilities.m in Sources */,
 				B64D42421A15FD8500ACDCA7 /* UILabel+CJWLabel.m in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,

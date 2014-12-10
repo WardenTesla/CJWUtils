@@ -39,8 +39,15 @@
 }
 
 
-+(void)testing{
-    NSLog(@"%@ %@ %@ %@",[self thisYear],[self thisMonth],[self thisDay],[self tomorrowDate]);
++(NSDate *)now{
+    NSDate *date = [NSDate date];
+    
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    
+    NSInteger interval = [zone secondsFromGMTForDate: date];
+    
+    NSDate *localeDate = [date  dateByAddingTimeInterval: interval];
+    return localeDate;
 }
 
 +(NSDateFormatter *)dateFormatter{

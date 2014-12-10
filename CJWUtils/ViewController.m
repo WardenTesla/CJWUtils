@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDate *date = [[CJWDateUtils stringToDate:@"20140909 1834"] dateByAddingYears:3];
+    NSDate *date = [[CJWDateUtils stringToDate:@"20140909 0000"] dateByAddingHours:3];
     
     [CJWDateUtils testing];
 //    [CJWDateUtils ]

@@ -13,13 +13,13 @@
 #define D_YEAR		31556926
 
 
-enum {
-    CJW_MINUTE  =   60,
-    CJW_HOUR    =   3600,
-    CJW_DAY     =   86400,
-    CJW_WEEK    =   604800,
-    CJW_YEAR    =   31556926,
-};
+//enum {
+//    CJW_MINUTE  =   60,
+//    CJW_HOUR    =   3600,
+//    CJW_DAY     =   86400,
+//    CJW_WEEK    =   604800,
+//    CJW_YEAR    =   31556926,
+//};
 
 
 @interface NSDate (Utilities)

@@ -13,6 +13,9 @@
 +(NSDate *)stringToDate:(NSString *)dateString;
 +(NSString *)sampleInput;
 +(void)testing;
+
++(NSDate *)now;
+
 @end
 
 

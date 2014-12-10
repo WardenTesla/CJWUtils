@@ -13,6 +13,7 @@
 
 #import "CJWVersion.h"
 #import "CJWDateUtils.h"
+#import "NSDate+Utilities.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDate *date = [CJWDateUtils stringToDate:@"20140909 1834"];
+    NSDate *date = [[CJWDateUtils stringToDate:@"20140909 1834"] dateByAddingYears:3];
     
     [CJWDateUtils testing];
 //    [CJWDateUtils ]

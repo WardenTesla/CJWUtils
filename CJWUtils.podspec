@@ -132,6 +132,10 @@ Pod::Spec.new do |s|
     ss.source_files = 'CJWUtils/libs/JSONKit-master/*'
     ss.requires_arc = false
   end
+  
+  s.subspec 'NSDate-Extensions' do |ss|
+    ss.source_files = 'CJWUtils/libs/NSDate-Extensions-master/*'
+  end
 
 
   # s.public_header_files = "Classes/**/*.h"

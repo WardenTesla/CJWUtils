@@ -13,3 +13,10 @@
 +(NSString *)generateUUID;
 
 @end
+
+@interface NSString (CJWWeekDay)
+
++(NSString *)weekDayByIndex:(int)index;
+
+@end
+

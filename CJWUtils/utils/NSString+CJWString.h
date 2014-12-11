@@ -16,7 +16,7 @@
 
 @interface NSString (CJWWeekDay)
 
-+(NSString *)weekDayByIndex:(int64_t)index;
++(NSString *)weekDayByIndex:(NSInteger)index;
 
 @end
 

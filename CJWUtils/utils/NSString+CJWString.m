@@ -41,6 +41,8 @@
             weekDay = @"周六";break;
         case 7:
             weekDay = @"周日";break;
+        case 0:
+            weekDay = @"周日";break;
         default:weekDay = @"周n";break;
     }
     return weekDay;

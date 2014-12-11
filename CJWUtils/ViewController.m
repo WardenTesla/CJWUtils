@@ -25,7 +25,6 @@
     [super viewDidLoad];
     NSDate *date = [[CJWDateUtils stringToDate:@"20140909 0000"] dateByAddingHours:3];
     
-    [CJWDateUtils testing];
 //    [CJWDateUtils ]
     NSLog(@"%@cc {{%@}}",[CJWVersion isiOS8]?@"yes":@"no",date);
 //    NSURLCache *cache = [NSURLCache sharedURLCache];

@@ -24,11 +24,18 @@
     NSDate *date = [dateFormatter dateFromString:str];
     
     //增加差了的时区
-    NSTimeZone *zone = [NSTimeZone systemTimeZone];
-    NSInteger interval = [zone secondsFromGMTForDate: date];
-    NSDate *localeDate = [date  dateByAddingTimeInterval: interval];
+//    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//    NSInteger interval = [zone secondsFromGMTForDate: date];
+    NSDate *localeDate = [CJWDateUtils addTimeZone:date];
     
     return localeDate;
+}
+
++(NSDate *)addTimeZone:(NSDate *)date{
+//    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//    NSInteger interval = [zone secondsFromGMTForDate: date];
+//    date = [date dateByAddingTimeInterval:interval];
+    return date;
 }
 
 +(NSString *)sampleInput{
@@ -42,11 +49,11 @@
 +(NSDate *)now{
     NSDate *date = [NSDate date];
     
-    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+//    
+//    NSInteger interval = [zone secondsFromGMTForDate: date];
     
-    NSInteger interval = [zone secondsFromGMTForDate: date];
-    
-    NSDate *localeDate = [date  dateByAddingTimeInterval: interval];
+    NSDate *localeDate = [CJWDateUtils addTimeZone:date];
     return localeDate;
 }
 

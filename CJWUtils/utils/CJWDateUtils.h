@@ -12,27 +12,26 @@
 
 +(NSDate *)stringToDate:(NSString *)dateString;
 +(NSString *)sampleInput;
-+(void)testing;
-
 +(NSDate *)now;
++(NSDate *)addTimeZone:(NSDate *)date;
 
 @end
 
 
-@interface CJWDateUtils(dateMethod)
-
-+(NSDateComponents *)components;
-
-+(NSString *)thisYear;
-
-+(NSString *)thisMonth;
-
-+(NSString *)thisDate;
-
-+(NSString *)thisDay;
-
-+(NSString *)thisTime;
-
-+(NSString *)tomorrowDate;
-
-@end
+//@interface CJWDateUtils(dateMethod)
+//
+//+(NSDateComponents *)components;
+//
+//+(NSString *)thisYear;
+//
+//+(NSString *)thisMonth;
+//
+//+(NSString *)thisDate;
+//
+//+(NSString *)thisDay;
+//
+//+(NSString *)thisTime;
+//
+//+(NSString *)tomorrowDate;
+//
+//@end

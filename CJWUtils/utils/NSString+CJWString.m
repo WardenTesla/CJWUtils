@@ -22,7 +22,7 @@
 
 @implementation NSString (CJWWeekDay)
 
-+(NSString *)weekDayByIndex:(int)index{
++(NSString *)weekDayByIndex:(int64_t)index{
     
     NSString *weekDay = @"";
     switch (index) {

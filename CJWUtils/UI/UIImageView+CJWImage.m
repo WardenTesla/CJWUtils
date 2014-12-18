@@ -17,8 +17,8 @@
 @implementation UIImage (CJWImage)
 
 
--(void)compress{
-    [UIImage compressImageDownToPhoneScreenSize:self];
+-(UIImage *)compress{
+    return [UIImage compressImageDownToPhoneScreenSize:self];
 }
 
 +(UIImage*)compressImageDownToPhoneScreenSize:(UIImage*)theImage{

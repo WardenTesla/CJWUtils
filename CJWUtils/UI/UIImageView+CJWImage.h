@@ -15,7 +15,7 @@
 
 @interface UIImage (CJWImage)
 
--(void)compress;
+-(UIImage *)compress;
 
 +(UIImage*)compressImageDownToPhoneScreenSize:(UIImage*)theImage;
 

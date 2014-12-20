@@ -136,6 +136,10 @@ Pod::Spec.new do |s|
   s.subspec 'NSDate-Extensions' do |ss|
     ss.source_files = 'CJWUtils/libs/NSDate-Extensions-master/*'
   end
+  
+  s.subspec 'SDURLCache' do |ss|
+    ss.source_files = 'CJWUtils/libs/SDURLCache/*'
+  end
 
 
   # s.public_header_files = "Classes/**/*.h"

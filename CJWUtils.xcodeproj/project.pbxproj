@@ -66,6 +66,8 @@
 		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
 		B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */; };
+		B6BF33C01A4531F600059669 /* SDCachedURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */; };
+		B6BF33C11A4531F600059669 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BF1A4531F600059669 /* SDURLCache.m */; };
 		B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1C7C119E8CCE9002E459D /* CJWEncode.m */; };
 		B6F95AEF1A36E0DC00C298DC /* CJWDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */; };
 /* End PBXBuildFile section */
@@ -197,6 +199,10 @@
 		B6BB71B319E6788D0001088F /* CJWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJWUtils.h; sourceTree = "<group>"; };
 		B6BB71B519E6823D0001088F /* UIImageView+CJWImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CJWImage.h"; sourceTree = "<group>"; };
 		B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CJWImage.m"; sourceTree = "<group>"; };
+		B6BF33BC1A4531F600059669 /* SDCachedURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCachedURLResponse.h; sourceTree = "<group>"; };
+		B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCachedURLResponse.m; sourceTree = "<group>"; };
+		B6BF33BE1A4531F600059669 /* SDURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLCache.h; sourceTree = "<group>"; };
+		B6BF33BF1A4531F600059669 /* SDURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDURLCache.m; sourceTree = "<group>"; };
 		B6F1C7C019E8CCE9002E459D /* CJWEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWEncode.h; sourceTree = "<group>"; };
 		B6F1C7C119E8CCE9002E459D /* CJWEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWEncode.m; sourceTree = "<group>"; };
 		B6F95AED1A36E0DC00C298DC /* CJWDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWDateUtils.h; sourceTree = "<group>"; };
@@ -270,6 +276,7 @@
 		B64EDE6019EBA29400B529B5 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				B6BF33BB1A4531F600059669 /* SDURLCache */,
 				B6B995351A37EE7600A10201 /* NSDate-Extensions-master */,
 				B631A2DC1A334048006F25FA /* JSONKit-master */,
 				B694A11019ECF1A500874196 /* Reachability */,
@@ -502,6 +509,17 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		B6BF33BB1A4531F600059669 /* SDURLCache */ = {
+			isa = PBXGroup;
+			children = (
+				B6BF33BC1A4531F600059669 /* SDCachedURLResponse.h */,
+				B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */,
+				B6BF33BE1A4531F600059669 /* SDURLCache.h */,
+				B6BF33BF1A4531F600059669 /* SDURLCache.m */,
+			);
+			path = SDURLCache;
+			sourceTree = "<group>";
+		};
 		EE74EBFF45F74355BAAA503E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +692,7 @@
 				B6B5AA021A0B1324005A96E1 /* AppInfoManager.m in Sources */,
 				B63B8FC519EA50E60075B8A0 /* RNDecryptor.m in Sources */,
 				B6BB71A019E6774A0001088F /* bitstream.c in Sources */,
+				B6BF33C11A4531F600059669 /* SDURLCache.m in Sources */,
 				B629360519E7B24D00EC9E44 /* UITableView+CJWTabelView.m in Sources */,
 				B6BB71A419E6774A0001088F /* qrinput.c in Sources */,
 				B6BB71A119E6774A0001088F /* mask.c in Sources */,
@@ -697,6 +716,7 @@
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,
 				B694A11319ECF1A500874196 /* Reachability.m in Sources */,
 				B6BB71A319E6774A0001088F /* qrencode.c in Sources */,
+				B6BF33C01A4531F600059669 /* SDCachedURLResponse.m in Sources */,
 				B63B8FE919EA5F520075B8A0 /* NSData+Base64.m in Sources */,
 				B64EDE6619EBA2A300B529B5 /* README.md in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,

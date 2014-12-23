@@ -39,7 +39,7 @@
 }
 
 +(NSString *)sampleInput{
-    return @"yyyyMMdd HHmm";
+    return @"yyyy-MM-dd HH-mm";
 }
 
 +(void)today:(NSString *)hour minute:(NSString *)min{

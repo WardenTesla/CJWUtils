@@ -139,6 +139,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'SDURLCache' do |ss|
     ss.source_files = 'CJWUtils/libs/SDURLCache/*'
+    ss.requires_arc = false
   end
 
 

@@ -18,10 +18,10 @@
 
 +(NSDate *)stringToDate:(NSString *)dateString{
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH-mm-ss"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH-mm"];
     //20100804 1601
-    NSString *str = [NSString stringWithFormat:@"%@00",dateString];
-    NSDate *date = [dateFormatter dateFromString:str];
+//    NSString *str = [NSString stringWithFormat:@"%@00",dateString];
+    NSDate *date = [dateFormatter dateFromString:dateString];
     
     //增加差了的时区
 //    NSTimeZone *zone = [NSTimeZone systemTimeZone];

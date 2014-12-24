@@ -38,7 +38,7 @@
             });
 //            block(object);
         }else{
-            NSLog(@"no cache");
+//            NSLog(@"no cache");
         }
     }];
 }

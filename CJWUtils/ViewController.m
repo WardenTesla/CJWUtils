@@ -50,8 +50,7 @@
     [self.view showLoading];
     
     CJWStatistic *sta = [[CJWStatistic alloc] init];
-    NSLog(@"%@ %@",[sta converFromInt:[sta statistic3G]],[sta converFromLongLongInt:[sta statisticWIFI]]);
-    
+    NSLog(@"%@",[sta getDataCounters]);
 }
 
 -(void)req{

@@ -16,4 +16,6 @@
 -(NSString *)converFromLongLongInt:(long long int)bytes;
 -(NSString *)converFromInt:(int)bytes;
 
+- (NSArray *)getDataCounters;
+
 @end

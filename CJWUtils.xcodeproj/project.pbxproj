@@ -66,8 +66,9 @@
 		B6BB71AE19E678000001088F /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AA19E678000001088F /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B6BB71AF19E678000001088F /* CJWDesEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71AD19E678000001088F /* CJWDesEncrypt.m */; };
 		B6BB71B719E6823D0001088F /* UIImageView+CJWImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */; };
-		B6BF33C01A4531F600059669 /* SDCachedURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */; };
-		B6BF33C11A4531F600059669 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BF1A4531F600059669 /* SDURLCache.m */; };
+		B6BF33C01A4531F600059669 /* SDCachedURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6BF33C11A4531F600059669 /* SDURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BF33BF1A4531F600059669 /* SDURLCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B6D554D71A4BB3CC0071C2B8 /* CJWStatistic.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */; };
 		B6F1C7C219E8CCE9002E459D /* CJWEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1C7C119E8CCE9002E459D /* CJWEncode.m */; };
 		B6F95AEF1A36E0DC00C298DC /* CJWDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */; };
 /* End PBXBuildFile section */
@@ -203,6 +204,8 @@
 		B6BF33BD1A4531F600059669 /* SDCachedURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCachedURLResponse.m; sourceTree = "<group>"; };
 		B6BF33BE1A4531F600059669 /* SDURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDURLCache.h; sourceTree = "<group>"; };
 		B6BF33BF1A4531F600059669 /* SDURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDURLCache.m; sourceTree = "<group>"; };
+		B6D554D51A4BB3CC0071C2B8 /* CJWStatistic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWStatistic.h; sourceTree = "<group>"; };
+		B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWStatistic.m; sourceTree = "<group>"; };
 		B6F1C7C019E8CCE9002E459D /* CJWEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWEncode.h; sourceTree = "<group>"; };
 		B6F1C7C119E8CCE9002E459D /* CJWEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWEncode.m; sourceTree = "<group>"; };
 		B6F95AED1A36E0DC00C298DC /* CJWDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWDateUtils.h; sourceTree = "<group>"; };
@@ -418,6 +421,8 @@
 				B65943C81A331C7200C042EF /* NSString+CJWString.m */,
 				B6F95AED1A36E0DC00C298DC /* CJWDateUtils.h */,
 				B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */,
+				B6D554D51A4BB3CC0071C2B8 /* CJWStatistic.h */,
+				B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -711,6 +716,7 @@
 				B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */,
 				B6BB718919E676340001088F /* MJRefreshConst.m in Sources */,
 				B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */,
+				B6D554D71A4BB3CC0071C2B8 /* CJWStatistic.m in Sources */,
 				B6BB718D19E676340001088F /* UIScrollView+MJRefresh.m in Sources */,
 				B6BB718E19E676340001088F /* UIView+MJExtension.m in Sources */,
 				B6BB712119E659DE0001088F /* AppDelegate.m in Sources */,

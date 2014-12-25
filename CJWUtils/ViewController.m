@@ -15,6 +15,8 @@
 #import "CJWDateUtils.h"
 #import "NSDate+Utilities.h"
 
+#import "CJWStatistic.h"
+
 @interface ViewController ()
 
 @end
@@ -46,6 +48,11 @@
     
     [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(req)]];
     [self.view showLoading];
+    
+    CJWStatistic *sta = [[CJWStatistic alloc] init];
+    NSString *str = [sta hello:[sta statisitcWIFI]];
+    NSLog(@"%@",str);
+    
 }
 
 -(void)req{

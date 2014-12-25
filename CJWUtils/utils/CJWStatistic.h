@@ -12,7 +12,8 @@
 
 
 -(int)statistic3G;
--(long long int)statisitcWIFI;
--(NSString *)hello:(long long int)bytes;
+-(long long int)statisticWIFI;
+-(NSString *)converFromLongLongInt:(long long int)bytes;
+-(NSString *)converFromInt:(int)bytes;
 
 @end

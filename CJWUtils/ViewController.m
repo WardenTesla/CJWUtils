@@ -50,8 +50,7 @@
     [self.view showLoading];
     
     CJWStatistic *sta = [[CJWStatistic alloc] init];
-    NSString *str = [sta hello:[sta statisitcWIFI]];
-    NSLog(@"%@",str);
+    NSLog(@"%@ %@",[sta converFromInt:[sta statistic3G]],[sta converFromLongLongInt:[sta statisticWIFI]]);
     
 }
 

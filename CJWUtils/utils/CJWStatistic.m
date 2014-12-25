@@ -49,7 +49,7 @@
 }
 
 
--(long long int)statisitcWIFI{
+-(long long int)statisticWIFI{
     struct ifaddrs *ifa_list = 0, *ifa;
     if (getifaddrs(&ifa_list) == -1)
     {
@@ -87,10 +87,29 @@
     return iBytes+oBytes;
 }
 
--(NSString *)hello:(long long int)bytes{
+-(NSString *)converFromLongLongInt:(long long int)bytes{
     if(bytes < 1024)     // B
     {
         return [NSString stringWithFormat:@"%lldB", bytes];
+    }
+    else if(bytes >= 1024 && bytes < 1024 * 1024) // KB
+    {
+        return [NSString stringWithFormat:@"%.1fKB", (double)bytes / 1024];
+    }
+    else if(bytes >= 1024 * 1024 && bytes < 1024 * 1024 * 1024)   // MB
+    {
+        return [NSString stringWithFormat:@"%.2fMB", (double)bytes / (1024 * 1024)];
+    }
+    else    // GB
+    {
+        return [NSString stringWithFormat:@"%.3fGB", (double)bytes / (1024 * 1024 * 1024)];
+    }
+}
+
+-(NSString *)converFromInt:(int)bytes{
+    if(bytes < 1024)     // B
+    {
+        return [NSString stringWithFormat:@"%dB", bytes];
     }
     else if(bytes >= 1024 && bytes < 1024 * 1024) // KB
     {

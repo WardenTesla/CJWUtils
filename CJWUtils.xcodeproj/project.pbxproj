@@ -22,6 +22,7 @@
 		B63B8FEA19EA5F520075B8A0 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE219EA5F520075B8A0 /* NSData+CommonCrypto.m */; };
 		B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */; };
 		B63B8FEC19EA5F520075B8A0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B63B8FE519EA5F520075B8A0 /* README.md */; };
+		B6450FE31A52510F00BFDDDF /* CPlaceHoldImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B6450FE21A52510F00BFDDDF /* CPlaceHoldImage.png */; };
 		B64D42421A15FD8500ACDCA7 /* UILabel+CJWLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D42411A15FD8500ACDCA7 /* UILabel+CJWLabel.m */; };
 		B64EDE6519EBA2A300B529B5 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6319EBA2A300B529B5 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B64EDE6619EBA2A300B529B5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B64EDE6419EBA2A300B529B5 /* README.md */; };
@@ -112,6 +113,7 @@
 		B63B8FE319EA5F520075B8A0 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
 		B63B8FE419EA5F520075B8A0 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		B63B8FE519EA5F520075B8A0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B6450FE21A52510F00BFDDDF /* CPlaceHoldImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CPlaceHoldImage.png; sourceTree = "<group>"; };
 		B64D42401A15FD8500ACDCA7 /* UILabel+CJWLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CJWLabel.h"; sourceTree = "<group>"; };
 		B64D42411A15FD8500ACDCA7 /* UILabel+CJWLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CJWLabel.m"; sourceTree = "<group>"; };
 		B64EDE6219EBA2A300B529B5 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 		B6BB71B419E682130001088F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B6450FE21A52510F00BFDDDF /* CPlaceHoldImage.png */,
 				B6BB71B519E6823D0001088F /* UIImageView+CJWImage.h */,
 				B6BB71B619E6823D0001088F /* UIImageView+CJWImage.m */,
 				B629360319E7B24D00EC9E44 /* UITableView+CJWTabelView.h */,
@@ -618,6 +621,7 @@
 				B63B8FE819EA5F520075B8A0 /* LICENSE in Resources */,
 				B63B8FE619EA5F520075B8A0 /* .gitignore in Resources */,
 				B6BB712719E659DE0001088F /* Main.storyboard in Resources */,
+				B6450FE31A52510F00BFDDDF /* CPlaceHoldImage.png in Resources */,
 				B6BB712C19E659DE0001088F /* LaunchScreen.xib in Resources */,
 				B6BB718719E676340001088F /* MJRefresh.bundle in Resources */,
 				B6BB712919E659DE0001088F /* Images.xcassets in Resources */,

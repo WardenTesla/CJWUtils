@@ -69,13 +69,14 @@
 @implementation CJWHttpUtils (httpWithCache)
 
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param shouldCache:(BOOL)flag success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
-    
+    BOOL returnFlag = NO;
     NSString *cacheKey = [CJWCacheUtils generateCacheKey:url param:param];
     __weak __block id cacheObject;
     if (flag) {
         NSString *cacheKey = [CJWCacheUtils generateCacheKey:url param:param];
         [CJWCacheUtils getCache:cacheKey block:^(id object) {
             cacheObject = object;
+            returnFlag = YES;
             success(object);
         }];
     }
@@ -93,7 +94,9 @@
             [CJWCacheUtils cache:response forKey:cacheKey];
         }
     } fail:^{
-        fail();
+        if !returnFlag {
+            fail();
+        }
     }];
 }
 
@@ -149,6 +152,7 @@
     [CJWNetworkActivityIndicator startIndicator];
     NSString *cacheKey = [CJWCacheUtils generateCacheKey:url param:param];
     __weak __block id cacheObject;
+    
     if (flag) {
         NSString *cacheKey = [CJWCacheUtils generateCacheKey:url param:param];
         [CJWCacheUtils getCache:cacheKey block:^(id object) {

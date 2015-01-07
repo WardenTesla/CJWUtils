@@ -69,7 +69,7 @@
 @implementation CJWHttpUtils (httpWithCache)
 
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param shouldCache:(BOOL)flag success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
-    BOOL returnFlag = NO;
+    __block BOOL returnFlag = NO;
     NSString *cacheKey = [CJWCacheUtils generateCacheKey:url param:param];
     __weak __block id cacheObject;
     if (flag) {
@@ -94,7 +94,7 @@
             [CJWCacheUtils cache:response forKey:cacheKey];
         }
     } fail:^{
-        if !returnFlag {
+        if (!returnFlag) {
             fail();
         }
     }];

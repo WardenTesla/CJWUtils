@@ -29,6 +29,7 @@
 		B65943C91A331C7200C042EF /* NSString+CJWString.m in Sources */ = {isa = PBXBuildFile; fileRef = B65943C81A331C7200C042EF /* NSString+CJWString.m */; };
 		B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = B68BA24219EB773000F1BF6A /* CJWCrypt.m */; };
 		B694A11319ECF1A500874196 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B694A11219ECF1A500874196 /* Reachability.m */; };
+		B69558331A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69558321A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
 		B6B5A9FF1A0B0B48005A96E1 /* CJWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */; };
@@ -125,6 +126,8 @@
 		B68BA24219EB773000F1BF6A /* CJWCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWCrypt.m; sourceTree = "<group>"; };
 		B694A11119ECF1A500874196 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B694A11219ECF1A500874196 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B69558311A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CJWTableViewCell.h"; sourceTree = "<group>"; };
+		B69558321A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CJWTableViewCell.m"; sourceTree = "<group>"; };
 		B6A0B1C319E9201000D44554 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
@@ -513,6 +516,8 @@
 				B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */,
 				B64D42401A15FD8500ACDCA7 /* UILabel+CJWLabel.h */,
 				B64D42411A15FD8500ACDCA7 /* UILabel+CJWLabel.m */,
+				B69558311A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.h */,
+				B69558321A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -731,6 +736,7 @@
 				B64EDE6619EBA2A300B529B5 /* README.md in Sources */,
 				B6BB714419E65E260001088F /* SDNetworkActivityIndicator.m in Sources */,
 				B6BB711E19E659DE0001088F /* main.m in Sources */,
+				B69558331A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

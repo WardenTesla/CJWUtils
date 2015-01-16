@@ -22,6 +22,7 @@
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
     [CJWNetworkActivityIndicator startIndicator];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager securityPolicy].allowInvalidCertificates = YES;
     [manager POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [CJWNetworkActivityIndicator stopIndicator];
         success(responseObject);

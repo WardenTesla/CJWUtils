@@ -189,6 +189,7 @@ Pod::Spec.new do |s|
   s.dependency "MBProgressHUD"
   #s.dependency "CGFloatType"
   s.dependency "TMCache"
+  s.dependency "UICKeyChainStore"
   s.dependency "FLKAutoLayout","~> 0.2.0"
 
 end

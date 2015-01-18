@@ -10,10 +10,6 @@
 #import "UICKeyChainStore.h"
 #import <UIKit/UIKit.h>
 
-/*
- let PASSWORD = "PASSWORD"
- let ACCOUNT = "ACCOUNT"
- */
 #define PASSWORD @"PASSWORD"
 #define ACCOUNT @"ACCOUNT"
 #define IS_LOGIN @"IS_LOGIN"

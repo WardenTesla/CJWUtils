@@ -20,3 +20,15 @@
 +(UIImage*)compressImageDownToPhoneScreenSize:(UIImage*)theImage;
 
 @end
+
+
+@interface UIImageView (CJWCircleImageView)
+
+//-(UIImage *)compress;
+
+//+(UIImage*)compressImageDownToPhoneScreenSize:(UIImage*)theImage;
+
++(UIImageView*)imageToCircle:(UIImageView*)imageView;
+
+
+@end

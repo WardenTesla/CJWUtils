@@ -58,3 +58,15 @@
 }
 @end
 
+
+@implementation UIImageView (CJWCircleImageView)
+
++(UIImageView*)imageToCircle:(UIImageView*)imageView{
+    CALayer *layer = imageView.layer;
+    layer.cornerRadius = imageView.frame.size.width / 2;
+    layer.masksToBounds = YES;
+    return imageView;
+}
+
+
+@end

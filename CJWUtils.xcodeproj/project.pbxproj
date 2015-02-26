@@ -133,7 +133,6 @@
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
 		B6A0B1CF19E931E800D44554 /* CJWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUserManager.m; sourceTree = "<group>"; };
-		B6ABBB131A6E4C6A007E6B55 /* CJWUtils-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJWUtils-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6ABF4A41A6B634A00C9D79B /* CJWLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWLoginManager.h; sourceTree = "<group>"; };
 		B6ABF4A51A6B634A00C9D79B /* CJWLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWLoginManager.m; sourceTree = "<group>"; };
 		B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWVersion.h; sourceTree = "<group>"; };
@@ -444,7 +443,6 @@
 				B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */,
 				B6D554D51A4BB3CC0071C2B8 /* CJWStatistic.h */,
 				B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */,
-				B6ABBB131A6E4C6A007E6B55 /* CJWUtils-Bridging-Header.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -884,7 +882,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CJWUtils/utils/CJWUtils-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -899,7 +897,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CJWUtils/utils/CJWUtils-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

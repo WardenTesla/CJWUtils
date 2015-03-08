@@ -13,4 +13,6 @@
 -(void)clearExtraLines;
 -(void)scrollToTop:(BOOL)animate;
 
+//-(void)
+
 @end

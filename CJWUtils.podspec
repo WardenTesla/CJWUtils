@@ -92,10 +92,6 @@ Pod::Spec.new do |s|
   #s.source_files  = "Classes", "CJWUtils/utils/*.{h,m}"
   s.source_files  = "Classes", "CJWUtils/utils/**/*"
   s.exclude_files = "Classes/Exclude"
-
-  s.subspec 'Refresh' do |ss|
-    ss.source_files = 'CJWUtils/MJRefresh/*'
-  end
   
   s.subspec 'QRCode' do |ss|
     ss.source_files = 'CJWUtils/libqrencode/*'
@@ -190,6 +186,7 @@ Pod::Spec.new do |s|
   #s.dependency "CGFloatType"
   s.dependency "TMCache"
   s.dependency "UICKeyChainStore"
+  s.dependency "MJRefresh"
   s.dependency "FLKAutoLayout","~> 0.2.0"
 
 end

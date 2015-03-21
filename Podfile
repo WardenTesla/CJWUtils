@@ -9,6 +9,7 @@ target "CJWUtils" do
     pod "CGFloatType"
     pod "TMCache"
     pod 'UICKeyChainStore'
+    pod 'MJRefresh'
 end
 
 target "CJWUtilsTests" do

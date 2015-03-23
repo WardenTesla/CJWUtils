@@ -134,8 +134,8 @@
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
 		B6A0B1CF19E931E800D44554 /* CJWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUserManager.m; sourceTree = "<group>"; };
-		B6A8D8F01AC04E92009FDC13 /* CJWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWView.h; sourceTree = "<group>"; };
-		B6A8D8F11AC04E92009FDC13 /* CJWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWView.m; sourceTree = "<group>"; };
+		B6A8D8F01AC04E92009FDC13 /* CJWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJWView.h; path = ../utils/CJWView.h; sourceTree = "<group>"; };
+		B6A8D8F11AC04E92009FDC13 /* CJWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJWView.m; path = ../utils/CJWView.m; sourceTree = "<group>"; };
 		B6ABF4A41A6B634A00C9D79B /* CJWLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWLoginManager.h; sourceTree = "<group>"; };
 		B6ABF4A51A6B634A00C9D79B /* CJWLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWLoginManager.m; sourceTree = "<group>"; };
 		B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWVersion.h; sourceTree = "<group>"; };
@@ -446,8 +446,6 @@
 				B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */,
 				B6D554D51A4BB3CC0071C2B8 /* CJWStatistic.h */,
 				B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */,
-				B6A8D8F01AC04E92009FDC13 /* CJWView.h */,
-				B6A8D8F11AC04E92009FDC13 /* CJWView.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -538,6 +536,8 @@
 				B64D42411A15FD8500ACDCA7 /* UILabel+CJWLabel.m */,
 				B69558311A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.h */,
 				B69558321A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m */,
+				B6A8D8F01AC04E92009FDC13 /* CJWView.h */,
+				B6A8D8F11AC04E92009FDC13 /* CJWView.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";

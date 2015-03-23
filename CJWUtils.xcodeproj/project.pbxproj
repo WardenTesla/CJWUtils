@@ -32,6 +32,7 @@
 		B69558331A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B69558321A5FCB7A00826070 /* UITableViewCell+CJWTableViewCell.m */; };
 		B6A0B1C519E9201000D44554 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */; };
 		B6A0B1D019E931E800D44554 /* CJWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0B1CF19E931E800D44554 /* CJWUserManager.m */; };
+		B6A8D8F21AC04E92009FDC13 /* CJWView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8D8F11AC04E92009FDC13 /* CJWView.m */; };
 		B6ABF4A61A6B634A00C9D79B /* CJWLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ABF4A51A6B634A00C9D79B /* CJWLoginManager.m */; };
 		B6B5A9FF1A0B0B48005A96E1 /* CJWVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5A9FE1A0B0B48005A96E1 /* CJWVersion.m */; };
 		B6B5AA021A0B1324005A96E1 /* AppInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B5AA011A0B1324005A96E1 /* AppInfoManager.m */; };
@@ -133,6 +134,8 @@
 		B6A0B1C419E9201000D44554 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		B6A0B1CE19E931E800D44554 /* CJWUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWUserManager.h; sourceTree = "<group>"; };
 		B6A0B1CF19E931E800D44554 /* CJWUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWUserManager.m; sourceTree = "<group>"; };
+		B6A8D8F01AC04E92009FDC13 /* CJWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWView.h; sourceTree = "<group>"; };
+		B6A8D8F11AC04E92009FDC13 /* CJWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWView.m; sourceTree = "<group>"; };
 		B6ABF4A41A6B634A00C9D79B /* CJWLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWLoginManager.h; sourceTree = "<group>"; };
 		B6ABF4A51A6B634A00C9D79B /* CJWLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJWLoginManager.m; sourceTree = "<group>"; };
 		B6B5A9FD1A0B0B48005A96E1 /* CJWVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJWVersion.h; sourceTree = "<group>"; };
@@ -443,6 +446,8 @@
 				B6F95AEE1A36E0DC00C298DC /* CJWDateUtils.m */,
 				B6D554D51A4BB3CC0071C2B8 /* CJWStatistic.h */,
 				B6D554D61A4BB3CC0071C2B8 /* CJWStatistic.m */,
+				B6A8D8F01AC04E92009FDC13 /* CJWView.h */,
+				B6A8D8F11AC04E92009FDC13 /* CJWView.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -705,6 +710,7 @@
 				B63B8FEB19EA5F520075B8A0 /* NSString+Base64.m in Sources */,
 				B68BA24319EB773000F1BF6A /* CJWCrypt.m in Sources */,
 				B6B9953B1A37EE7600A10201 /* NSDate+Utilities.m in Sources */,
+				B6A8D8F21AC04E92009FDC13 /* CJWView.m in Sources */,
 				B64D42421A15FD8500ACDCA7 /* UILabel+CJWLabel.m in Sources */,
 				B6BB715A19E66F8E0001088F /* NSString+Validate.m in Sources */,
 				B6BB718B19E676340001088F /* MJRefreshHeaderView.m in Sources */,

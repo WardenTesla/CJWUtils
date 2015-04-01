@@ -45,10 +45,12 @@
 @implementation UIView (CJWProgressHUD)
 
 -(void)showHUDwith:(NSString *)text{
+    [self hideAllHUD];
     [CJWProgressHUD showDefaultAt:self text:text];
 }
 
 -(void)showTemporary:(NSString *)text{
+    [self hideAllHUD];
     [CJWProgressHUD showTemporaryAt:self text:text];
 }
 
@@ -61,6 +63,7 @@
 }
 
 -(void)showLoading{
+    [self hideAllHUD];
     CJWProgressHUD *hud = [CJWProgressHUD showHUDAddedTo:self animated:YES];
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = @"pls wait";

@@ -35,6 +35,7 @@
     hud.mode = MBProgressHUDModeIndeterminate;
     hud.labelText = text;
     hud.animationType = MBProgressHUDAnimationFade;
+    
     return hud;
 }
 

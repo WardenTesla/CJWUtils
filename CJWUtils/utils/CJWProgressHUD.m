@@ -37,7 +37,7 @@
     hud.animationType = MBProgressHUDAnimationFade;
     return hud;
 }
-\
+
 @end
 
 //UIView + CJWProgressHUD

@@ -28,7 +28,6 @@
         [CJWProgressHUD hideHUDForView:view animated:YES];
     });
     return hud;
-    
 }
 
 +(CJWProgressHUD *)showDefaultAt:(UIView *)view text:(NSString *)text{

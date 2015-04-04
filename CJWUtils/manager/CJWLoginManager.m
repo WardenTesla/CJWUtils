@@ -27,6 +27,7 @@
                       manager = [[self alloc] init];
                   });
     return manager;
+    
 }
 
 

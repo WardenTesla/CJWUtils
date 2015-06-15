@@ -20,11 +20,11 @@
 */
 
 -(void)addRefreshHeader:(id)target refreshingAction:(SEL)action{
-    [self addLegendHeaderWithRefreshingTarget:target refreshingAction:action];
+//    [self addLegendHeaderWithRefreshingTarget:target refreshingAction:action];
 }
 
 -(void)addRefreshFooter:(id)target refreshingAction:(SEL)action{
-    [self addLegendFooterWithRefreshingTarget:target refreshingAction:action];
+//    [self addLegendFooterWithRefreshingTarget:target refreshingAction:action];
 }
 
 @end

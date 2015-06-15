@@ -15,8 +15,8 @@
 
 @interface UIScrollView (CJWRefreshableScrollView)
 
--(void)addRefreshHeader:(id)target refreshingAction:(SEL)action;
+-(void)addRefreshHeader:(id)target refreshingAction:(SEL)action NS_DEPRECATED_IOS(3_0,6_0);
 
--(void)addRefreshFooter:(id)target refreshingAction:(SEL)action;
+-(void)addRefreshFooter:(id)target refreshingAction:(SEL)action NS_DEPRECATED_IOS(3_0,6_0);
 
 @end

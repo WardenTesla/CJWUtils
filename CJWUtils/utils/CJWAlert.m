@@ -73,7 +73,7 @@
     }
     switch (style) {
         case CJWAlertStyleConfirmCancel:
-            alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:button0 otherButtonTitles:button0, nil];
+            alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:button0 otherButtonTitles:button1, nil];
             break;
         case CJWAlertStyleOnlyConfirm:
             alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:button0 otherButtonTitles: nil];

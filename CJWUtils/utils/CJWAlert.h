@@ -34,8 +34,6 @@ typedef NS_ENUM(NSInteger, CJWAlertStyle) {
 
 +(void)showWithTitle:(NSString *)title message:(NSString *)message button0:(NSString *)button0 button1:(NSString *)button1 style:(CJWAlertStyle)style alertStyle:(UIAlertViewStyle)alertStyle callback:(CJWCB)callback;
 
-+(void)showWithTitle:(NSString *)title message:(NSString *)message button0:(NSString *)button0 button1:(NSString *)button1 callback:(CJWCB)callback;
-
 +(void)showWithTitle:(NSString *)title message:(NSString *)message button0:(NSString *)button0 callback:(CJWCB)callback;
 
 +(CJWAlert *)alert;

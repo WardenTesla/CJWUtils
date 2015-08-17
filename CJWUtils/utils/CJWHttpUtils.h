@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
 
 typedef void (^CJWSuccessBlock)(id response);
 typedef void (^CJWFailBlock)();
@@ -15,6 +16,8 @@ typedef void (^CJWFailBlock)();
 @interface CJWHttpUtils : NSObject
 
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail;
+
+-(AFHTTPRequestOperationManager * )modifyManager:(AFHTTPRequestOperationManager *)manager;
 
 +(CJWHttpUtils *)manager;
 

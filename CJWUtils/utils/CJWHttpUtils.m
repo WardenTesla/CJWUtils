@@ -7,7 +7,6 @@
 //
 
 #import "CJWHttpUtils.h"
-#import "AFNetworking.h"
 #import "CJWCacheUtils.h"
 #import "CJWNetworkActivityIndicator.h"
 
@@ -18,11 +17,15 @@
 
 @implementation CJWHttpUtils
 
+-(AFHTTPRequestOperationManager * )modifyManager:(AFHTTPRequestOperationManager *)manager{
+    [manager securityPolicy].allowInvalidCertificates = YES;
+    return manager;
+}
 
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
     [CJWNetworkActivityIndicator startIndicator];
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager securityPolicy].allowInvalidCertificates = YES;
+    manager = [self modifyManager:manager];
     [manager POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [CJWNetworkActivityIndicator stopIndicator];
         success(responseObject);

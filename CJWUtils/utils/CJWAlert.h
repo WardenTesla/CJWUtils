@@ -25,8 +25,12 @@ typedef NS_ENUM(NSInteger, CJWAlertStyle) {
      */
     
 };
+
 //(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 @interface CJWAlert : NSObject
+
+@property (strong,nonatomic) CJWCB cjwCallback;
+
 //AlertViewStyle
 +(void)showWithTitle:(NSString *)title message:(NSString *)message style:(CJWAlertStyle)style callback:(CJWCB)callback;
 

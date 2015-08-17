@@ -9,12 +9,13 @@
 #import "CJWAlert.h"
 
 @interface CJWAlert()<UIAlertViewDelegate>{
-    CJWCB cjwCallback;
 }
-
 @end
 
 @implementation CJWAlert
+
+@synthesize cjwCallback;
+
 //(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 +(void)showWithTitle:(NSString *)title message:(NSString *)message style:(CJWAlertStyle)style callback:(CJWCB)callback{
     [[CJWAlert alert] showWithTitle:title message:message style:style alertStyle:UIAlertViewStyleDefault callback:callback];

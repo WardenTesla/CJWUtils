@@ -187,6 +187,6 @@ Pod::Spec.new do |s|
   s.dependency "TMCache"
   s.dependency "UICKeyChainStore"
   s.dependency "MJRefresh"
-  s.dependency "FLKAutoLayout","~> 0.2.0"
+  s.dependency "FLKAutoLayout"
 
 end

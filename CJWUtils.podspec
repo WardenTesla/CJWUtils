@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CJWUtils"
-  s.version      = "0.0.6
+  s.version      = "0.0.6"
   s.summary      = "CJWUtils is sort of tools for iOS develop by cjw"
 
   s.description  = <<-DESC

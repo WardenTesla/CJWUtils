@@ -11,6 +11,7 @@
 #import "CJWNetworkActivityIndicator.h"
 
 @interface CJWHttpUtils(){
+    AFHTTPRequestOperationManager *http;
 }
 
 @end
@@ -22,11 +23,29 @@
     return manager;
 }
 
+-(AFHTTPSessionManager *)requestUrl2:(NSString *)url param:(NSDictionary *)param success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    [CJWNetworkActivityIndicator startIndicator];
+    [mgr POST:url parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [CJWNetworkActivityIndicator stopIndicator];
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        [CJWNetworkActivityIndicator stopIndicator];
+        NSData *errorData = error.userInfo[AFNetworkingOperationFailingURLResponseDataErrorKey];
+        NSDictionary *serializedData = [NSJSONSerialization JSONObjectWithData: errorData options:kNilOptions error:nil];
+
+    }];
+    return mgr;
+}
+
 -(void)requestUrl:(NSString *)url param:(NSDictionary *)param success:(CJWSuccessBlock)success fail:(CJWFailBlock)fail{
     [CJWNetworkActivityIndicator startIndicator];
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager = [self modifyManager:manager];
-    [manager POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    if (http == nil) {
+        http = [AFHTTPRequestOperationManager manager];
+    }
+//    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    http = [self modifyManager:http];
+    [http POST:url parameters:param success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [CJWNetworkActivityIndicator stopIndicator];
         success(responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
